@@ -253,49 +253,7 @@ python -m evaluation.category             # Table 4
 python -m evaluation.instruction_ablation # Table 5
 ```
 
-As quick checks, the fine-tuned model should report `HR@10 = 3.75` in Table 3
-and `Action@1 = 40.3` in Table 4.
-
 ## Additional experiments
-
-### Instruction ablation
-
-After building a model's full index, run the three retrieval instructions below.
-Repeat them for `qwen3vl-2b`, `qwen3vl-8b`, `vlm2vec-v2`, and `lamra`.
-
-```bash
-MODEL=qwen3vl-2b
-INDEX="retrieval/indexes/$MODEL"
-OUTPUT="retrieval/rankings/instruction_ablation/$MODEL"
-
-python -m retrieval.retrieve \
-  --model "$MODEL" --index_base "$INDEX" \
-  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
-  --instruction "Retrieve videos similar to the query video." \
-  --views full --top_k 20 --no_query_cache --plain_filenames \
-  --out_dir "$OUTPUT/generic"
-
-python -m retrieval.retrieve \
-  --model "$MODEL" --index_base "$INDEX" \
-  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
-  --instruction "Retrieve soccer foul videos similar to the query." \
-  --views full --top_k 20 --no_query_cache --plain_filenames \
-  --out_dir "$OUTPUT/domain"
-
-python -m retrieval.retrieve \
-  --model "$MODEL" --index_base "$INDEX" \
-  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
-  --instruction "Retrieve soccer foul videos of the same action type, offence, and severity as the query." \
-  --views full --top_k 20 --no_query_cache --plain_filenames \
-  --out_dir "$OUTPUT/detailed"
-```
-
-Evaluate the resulting rankings with:
-
-```bash
-source .venv_eval/bin/activate
-python -m evaluation.instruction_ablation
-```
 
 ## Fine-tune Qwen3-VL-Embedding-2B
 
@@ -349,6 +307,45 @@ python -m evaluation.precedent
 python -m evaluation.category
 ```
 
+### Instruction ablation
+
+After building a model's full index, run the three retrieval instructions below.
+Repeat them for `qwen3vl-2b`, `qwen3vl-8b`, `vlm2vec-v2`, and `lamra`.
+
+```bash
+MODEL=qwen3vl-2b
+INDEX="retrieval/indexes/$MODEL"
+OUTPUT="retrieval/rankings/instruction_ablation/$MODEL"
+
+python -m retrieval.retrieve \
+  --model "$MODEL" --index_base "$INDEX" \
+  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
+  --instruction "Retrieve videos similar to the query video." \
+  --views full --top_k 20 --no_query_cache --plain_filenames \
+  --out_dir "$OUTPUT/generic"
+
+python -m retrieval.retrieve \
+  --model "$MODEL" --index_base "$INDEX" \
+  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
+  --instruction "Retrieve soccer foul videos similar to the query." \
+  --views full --top_k 20 --no_query_cache --plain_filenames \
+  --out_dir "$OUTPUT/domain"
+
+python -m retrieval.retrieve \
+  --model "$MODEL" --index_base "$INDEX" \
+  --data_dir data/mvfouls_window --nframes 16 --clip_mode multi_clip \
+  --instruction "Retrieve soccer foul videos of the same action type, offence, and severity as the query." \
+  --views full --top_k 20 --no_query_cache --plain_filenames \
+  --out_dir "$OUTPUT/detailed"
+```
+
+Evaluate the resulting rankings with:
+
+```bash
+source .venv_eval/bin/activate
+python -m evaluation.instruction_ablation
+```
+
 ## Optional SLURM launchers
 
 SLURM is not required. Optional launchers are available under `scripts/slurm/`:
@@ -365,11 +362,6 @@ sbatch scripts/slurm/run_finetune_qwen3vl.sbatch
 ```
 
 Adjust the scheduler directives for your cluster.
-
-## Not tracked
-
-Downloaded data, indexes, caches, checkpoints, and SLURM logs are git-ignored.
-Reference rankings and VARS+XVARS embeddings are included.
 
 ## Citation
 
