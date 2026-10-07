@@ -26,34 +26,86 @@ prepare_dataset.py   create the 16-frame MVFoul dataset
 train_qwen3vl.py     fine-tune Qwen3-VL-Embedding-2B
 ```
 
-All commands below assume that the current directory is the repository root.
-Create only the environment required for the method you want to run:
+## Quick Start
 
-| Use | Environment | Dataset preparation |
-|---|---|---|
-| Evaluate rankings | `.venv_eval` | annotations only |
-| Run VARS+XVARS | `.venv` | none |
-| Run or fine-tune Qwen3-VL | `.venv` | complete 16-frame dataset |
-| Run VLM2Vec-V2 or LamRA | `.venv_vlm2vec` | complete 16-frame dataset |
-| Run InternVideo2 | `.venv_internvideo2` | complete 16-frame dataset |
+### Recommended demo setup
 
-## Setup
+This is the shortest path to a working installation. It uses
+Qwen3-VL-Embedding-2B. You need Python 3.11, the SoccerNet-MVFoul Train split, and preferably an NVIDIA GPU.
+Run every command from the repository root.
 
-**1. Clone the repository**
+**1. Clone and install**
 
 ```bash
 git clone https://github.com/SoccerNet/sn-foulret.git
 cd sn-foulret
+
+python3.11 -m venv .venv
+source .venv/bin/activate
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements/qwen.txt -r requirements/demo.txt
 ```
 
-The model backends are optional, so the default clone does not download
-InternVideo or VLM2Vec. Initialize only the submodule required by the model you
-intend to run, as shown below. Evaluation, VARS+XVARS, and Qwen3-VL do not
-require either submodule.
+**2. Add and prepare the data**
 
-**2. Virtual environments**
+Download [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and place
+its Train split at:
 
-For evaluation only:
+```text
+data/mvfouls/Train/
+  annotations.json
+  action_*/clip_*.mp4
+```
+
+Then extract the 16-frame windows used by the model:
+
+```bash
+python prepare_dataset.py Train
+```
+
+**3. Build a small test index**
+
+The first run downloads the Qwen3-VL model weights. Building the index is
+GPU-intensive.
+
+```bash
+SMOKE_INDEX=retrieval/indexes/qwen3vl-2b-smoke
+
+python -m retrieval.build_full_index \
+  --model qwen3vl-2b \
+  --data_dir data/mvfouls_window \
+  --index_dir "$SMOKE_INDEX" \
+  --nframes 16 \
+  --clip_mode multi_clip \
+  --limit 10
+```
+
+**4. Start the demo**
+
+```bash
+INDEX_DIR="$PWD/$SMOKE_INDEX" bash Demo/run_flask_app.sh
+```
+
+Open [http://localhost:5000](http://localhost:5000). This ten-action index is
+only an installation check; its results are not representative of the full
+benchmark. See [Full local demo](#full-local-demo) to build the complete Train
+index.
+
+## Optional workflows and model backends
+
+Skip this section if you are following the quick start. Create only the
+environment required for the workflow you intend to run:
+
+| Use | Environment | Additional source code |
+|---|---|---|
+| Evaluate included rankings | `.venv_eval` | none |
+| Run VARS+XVARS or Qwen3-VL | `.venv` | none |
+| Run VLM2Vec-V2 or LamRA | `.venv_vlm2vec` | `Clones/VLM2Vec` |
+| Run InternVideo2 | `.venv_internvideo2` | `Clones/InternVideo` |
+
+### Evaluation only
 
 ```bash
 python3.11 -m venv .venv_eval
@@ -62,9 +114,7 @@ python -m pip install --upgrade pip
 pip install -r requirements/evaluation.txt
 ```
 
-Create only the model environment you need.
-
-Qwen3-VL-Embedding:
+### Qwen3-VL without the demo
 
 ```bash
 python3.11 -m venv .venv
@@ -75,7 +125,7 @@ python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements/qwen.txt
 ```
 
-VLM2Vec-V2 and LamRA:
+### VLM2Vec-V2 or LamRA
 
 ```bash
 git submodule update --init Clones/VLM2Vec
@@ -87,7 +137,7 @@ python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements/vlm2vec.txt
 ```
 
-InternVideo2:
+### InternVideo2
 
 ```bash
 git submodule update --init Clones/InternVideo
@@ -103,17 +153,10 @@ pip install -r requirements/internvideo2.txt
 ```
 
 Use a compatible FlashAttention wheel if your Python, Torch, or CUDA versions
-differ.
-
-Model weights are downloaded from Hugging Face on first use. InternVideo2-1B
-is gated: accept the conditions on the
+differ. InternVideo2-1B is gated: accept the conditions on the
 [model page](https://huggingface.co/OpenGVLab/InternVideo2-Stage2_1B-224p-f4),
-then authenticate from the InternVideo environment:
-
-```bash
-source .venv_internvideo2/bin/activate
-hf auth login
-```
+then run `hf auth login` from the InternVideo environment. Model weights are
+downloaded from Hugging Face on first use.
 
 Equivalent optional setup scripts are available under `scripts/setup/`.
 
@@ -210,7 +253,7 @@ python -m retrieval.vars_xvars.retrieve --split Valid
 
 Results are written to `retrieval/vars_xvars/rankings/`.
 
-## Run the local demo
+## Full local demo
 
 The Flask demo accepts an uploaded MP4 or text description and retrieves the
 most similar actions from the Train gallery. The default Qwen3-VL setup needs
