@@ -5,6 +5,11 @@ retrieval of soccer fouls. Given a query foul, retrieve past fouls a referee wou
 equivalently, regardless of camera angle, teams, or appearance. Accompanies the paper
 *SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Fouls*. 
 
+![Teaser Figure](figures/SoccerNet-FoulRet_Teaser.pdf)
+
+A memory bank for referees. We aim to AUGMENT referees rather than replace them. Automated classifiers and generative explainers emit a verdict directly, but can do so overconfidently and even hallucinate. Instead, our system takes a new foul (left) and retrieves semantically similar precedents together with the decisions that past referees reached on them (right). The referee reasons from these precedents and keeps the final call.
+
+
 Use this repository to index SoccerNet-MVFoul clips, retrieve similar fouls with
 visual or text-mediated models, and evaluate any set of rankings on FoulRet.
 
@@ -12,6 +17,7 @@ visual or text-mediated models, and evaluate any set of rankings on FoulRet.
 
 ```
 data/foulret/        FoulRet benchmark judgments
+Demo/                local Flask interface for video and text queries
 evaluation/          precedent, category, and ablation evaluation
 retrieval/           retrieval methods, indexes, and rankings
 requirements/        environment-specific dependencies
@@ -110,6 +116,14 @@ hf auth login
 
 Equivalent optional setup scripts are available under `scripts/setup/`.
 
+To run the browser demo, also install its lightweight web dependency into the
+model environment you plan to use:
+
+```bash
+source .venv/bin/activate       # or .venv_vlm2vec / .venv_internvideo2
+pip install -r requirements/demo.txt
+```
+
 ## Data
 
 Obtain [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and place it in
@@ -202,6 +216,42 @@ python -m retrieval.vars_xvars.retrieve --split Valid
 ```
 
 Results are written to `retrieval/vars_xvars/rankings/`.
+
+## Run the local demo
+
+The Flask demo searches a prebuilt Train FAISS index. Prepare
+`data/mvfouls_window/` as described above, install `requirements/demo.txt` in
+the chosen model environment, and build the model index using the command in
+the retrieval section. Then run:
+
+```bash
+bash Demo/run_flask_app.sh
+```
+
+If the index is missing, the launcher stops without downloading weights or
+starting an index build. It prints a warning, the expected index files, and the
+exact `retrieval.build_full_index` command that must be completed first.
+
+Once the index exists, rerun the launcher and open
+[http://localhost:5000](http://localhost:5000). Configure another model or port
+with environment variables:
+
+```bash
+MODEL=vlm2vec-v2 PORT=8080 bash Demo/run_flask_app.sh
+
+MODEL=qwen3vl-2b-finetuned \
+LORA_PATH=finetuning_outputs/qwen3vl-2b-labelsup/best_model \
+bash Demo/run_flask_app.sh
+```
+
+The launcher selects `.venv` for Qwen3-VL, `.venv_vlm2vec` for VLM2Vec/LamRA,
+and `.venv_internvideo2` for InternVideo2. Override `VENV_PATH`, `DATA_DIR`,
+`INDEX_DIR`, `TOP_K`, `HOST`, or `PORT` when needed. The default
+`HOST=127.0.0.1` keeps the development server local; do not expose it directly
+to the internet.
+
+All registered models support uploaded MP4 queries. Text-to-video queries are
+available for Qwen3-VL models; the other adapters are video-to-video only.
 
 ## Evaluate rankings
 

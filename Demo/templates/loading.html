@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loading SoccerNet-FoulRet</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            color: #f5fbf7;
+            background: radial-gradient(circle at top, #27815a, #0c3f29 68%);
+            font: 16px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
+        }
+        main { width: min(520px, calc(100% - 40px)); text-align: center; }
+        .ball { font-size: 54px; }
+        h1 { margin: 14px 0 4px; font: 700 38px/1.1 Georgia, serif; }
+        .model { opacity: .8; }
+        .spinner {
+            width: 54px;
+            height: 54px;
+            margin: 30px auto 18px;
+            border: 5px solid rgba(255, 255, 255, .25);
+            border-top-color: #efc85e;
+            border-radius: 50%;
+            animation: spin .9s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        #status { font-weight: 700; }
+        #error {
+            display: none;
+            margin-top: 22px;
+            padding: 14px;
+            border-radius: 9px;
+            color: #6f1818;
+            background: #ffe4e4;
+            text-align: left;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="ball">⚽</div>
+    <h1>SoccerNet-FoulRet</h1>
+    <div class="model">{{ model_display }}</div>
+    <div class="spinner" id="spinner"></div>
+    <div id="status">Loading the model and FAISS index…</div>
+    <div id="error" role="alert"></div>
+</main>
+<script>
+async function poll() {
+    try {
+        const response = await fetch("/health", {cache: "no-store"});
+        const data = await response.json();
+        if (data.ready) {
+            window.location.replace("/");
+            return;
+        }
+        if (data.error) {
+            document.getElementById("spinner").style.display = "none";
+            document.getElementById("status").textContent = "The demo could not start.";
+            const error = document.getElementById("error");
+            error.textContent = data.error;
+            error.style.display = "block";
+            return;
+        }
+    } catch (error) {
+        document.getElementById("status").textContent = "Waiting for the local server…";
+    }
+    window.setTimeout(poll, 1500);
+}
+poll();
+</script>
+</body>
+</html>

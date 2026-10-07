@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SoccerNet-FoulRet Demo</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #17231d;
+            --muted: #657069;
+            --line: #dce5df;
+            --panel: #f4f7f5;
+            --green: #146c43;
+            --green-dark: #0c4a2d;
+            --danger: #9d2f2f;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: var(--ink);
+            background: #fff;
+            font: 15px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        button, textarea, input { font: inherit; }
+        .shell { min-height: 100vh; display: grid; grid-template-columns: 320px minmax(0, 1fr); }
+        .sidebar {
+            padding: 28px 22px;
+            background: var(--panel);
+            border-right: 1px solid var(--line);
+        }
+        .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+        .brand-mark {
+            display: grid;
+            width: 44px;
+            height: 44px;
+            place-items: center;
+            border-radius: 13px;
+            color: white;
+            background: var(--green);
+            font-size: 23px;
+        }
+        .brand strong { display: block; font-size: 16px; }
+        .brand span { color: var(--muted); font-size: 12px; }
+        .model {
+            margin-bottom: 24px;
+            padding: 10px 12px;
+            border: 1px solid #c8ddd0;
+            border-radius: 9px;
+            color: var(--green-dark);
+            background: #e8f4ed;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .section { padding: 18px 0; border-top: 1px solid var(--line); }
+        .section h2 { margin: 0 0 8px; font-size: 14px; }
+        .section p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+        .upload {
+            position: relative;
+            display: grid;
+            min-height: 122px;
+            padding: 18px;
+            place-items: center;
+            text-align: center;
+            border: 2px dashed #aab9af;
+            border-radius: 12px;
+            background: white;
+            transition: border-color .2s, background .2s;
+        }
+        .upload:hover { border-color: var(--green); background: #f8fcfa; }
+        .upload input { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; }
+        .upload strong { display: block; margin-bottom: 4px; color: var(--green); }
+        .filename { margin-top: 8px; color: var(--green-dark); font-size: 12px; word-break: break-all; }
+        textarea {
+            width: 100%;
+            min-height: 104px;
+            padding: 10px 12px;
+            resize: vertical;
+            border: 1px solid #bdc9c1;
+            border-radius: 9px;
+            background: white;
+        }
+        textarea:focus { outline: 3px solid #d7eee1; border-color: var(--green); }
+        .button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px 14px;
+            border: 1px solid var(--green);
+            border-radius: 9px;
+            color: white;
+            background: var(--green);
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .button:hover { background: var(--green-dark); }
+        .button.secondary { color: var(--green-dark); background: white; }
+        .button.secondary:hover { background: #e8f4ed; }
+        .content { min-width: 0; padding: 50px clamp(24px, 5vw, 72px); }
+        .hero { max-width: 820px; margin: 4vh auto 0; }
+        .eyebrow {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            color: var(--green-dark);
+            background: #e8f4ed;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+        h1 { max-width: 750px; margin: 22px 0 14px; font: 700 clamp(38px, 7vw, 70px)/1.02 Georgia, serif; }
+        .lede { max-width: 680px; color: var(--muted); font-size: 18px; }
+        .stats { display: flex; gap: 14px; margin-top: 34px; }
+        .stat {
+            min-width: 190px;
+            padding: 18px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(25, 56, 38, .05);
+        }
+        .stat strong { display: block; font-size: 29px; }
+        .stat span { color: var(--muted); font-size: 12px; }
+        #results { display: none; }
+        .query {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--line);
+        }
+        .query h2, .matches-title { margin: 0 0 14px; font-size: 22px; }
+        .query-copy {
+            max-width: 680px;
+            padding: 15px 18px;
+            border-left: 4px solid var(--green);
+            border-radius: 6px;
+            background: #edf6f0;
+        }
+        .query video { width: min(520px, 100%); border-radius: 12px; background: #101010; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+        .card {
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 13px;
+            background: white;
+            box-shadow: 0 8px 24px rgba(25, 56, 38, .06);
+        }
+        .card-head { display: flex; justify-content: space-between; gap: 10px; padding: 13px 15px; font-weight: 800; }
+        .card-head span { overflow: hidden; color: var(--muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+        .card video { display: block; width: 100%; aspect-ratio: 16/9; background: #101010; object-fit: contain; }
+        .unavailable { display: grid; aspect-ratio: 16/9; place-items: center; color: #cbd3ce; background: #273029; }
+        details { border-top: 1px solid var(--line); }
+        summary { padding: 11px 15px; cursor: pointer; font-weight: 700; }
+        .details { padding: 3px 15px 15px; }
+        .score { margin-bottom: 10px; color: var(--green-dark); font-size: 22px; font-weight: 800; }
+        .score small { display: block; color: var(--muted); font-size: 11px; font-weight: 500; }
+        .label { margin-top: 7px; padding: 8px 10px; border-radius: 7px; color: #eef4f0; background: #34443a; font-size: 12px; }
+        .label b { color: white; }
+        .notice, .error {
+            margin-bottom: 18px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            background: #fff5d9;
+        }
+        .error { display: none; color: var(--danger); background: #fdeaea; }
+        .overlay {
+            position: fixed;
+            z-index: 10;
+            inset: 0;
+            display: none;
+            place-items: center;
+            background: rgba(255, 255, 255, .9);
+        }
+        .overlay.active { display: grid; }
+        .working { text-align: center; font-weight: 700; }
+        .spinner {
+            width: 46px;
+            height: 46px;
+            margin: 0 auto 14px;
+            border: 5px solid #dce5df;
+            border-top-color: var(--green);
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @media (max-width: 820px) {
+            .shell { display: block; }
+            .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+            .content { padding-top: 32px; }
+            .hero { margin-top: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="shell">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">⚽</div>
+            <div><strong>SoccerNet-FoulRet</strong><span>Local retrieval demo</span></div>
+        </div>
+        <div class="model">Model: {{ model_display }}</div>
+
+        <section class="section">
+            <h2>Search with a video</h2>
+            <p>Upload one soccer incident as an MP4.</p>
+            <label class="upload">
+                <input id="video-input" type="file" accept="video/mp4,.mp4">
+                <span><strong>Choose an MP4</strong>or drag it here</span>
+            </label>
+            <div class="filename" id="filename"></div>
+        </section>
+
+        <section class="section">
+            <h2>Search with a description</h2>
+            {% if supports_text %}
+            <p>Describe the action and referee decision.</p>
+            <form id="text-form">
+                <textarea id="text-query" placeholder="A reckless sliding tackle from behind…" required></textarea>
+                <button class="button" type="submit">Search description</button>
+            </form>
+            {% else %}
+            <p class="notice">This model is video-to-video only. Choose a Qwen3-VL model to enable text search.</p>
+            {% endif %}
+        </section>
+
+        <section class="section">
+            <button class="button secondary" id="reset" type="button">Start a new search</button>
+        </section>
+    </aside>
+
+    <main class="content">
+        <div class="error" id="error" role="alert"></div>
+        <section class="hero" id="landing">
+            <span class="eyebrow">Semantic foul retrieval</span>
+            <h1>Find the closest on-field precedents.</h1>
+            <p class="lede">
+                Upload an incident or describe one to retrieve visually and semantically
+                similar fouls from the SoccerNet-MVFoul Train gallery.
+            </p>
+            <div class="stats">
+                <div class="stat"><strong>{{ total_indexed }}</strong><span>gallery actions indexed</span></div>
+            </div>
+        </section>
+
+        <section id="results">
+            <div class="query">
+                <h2>Your query</h2>
+                <div id="query-view"></div>
+            </div>
+            <h2 class="matches-title">Top matching incidents</h2>
+            <div class="grid" id="results-grid"></div>
+        </section>
+    </main>
+</div>
+
+<div class="overlay" id="overlay" aria-live="polite">
+    <div class="working"><div class="spinner"></div><span id="working-text">Searching…</span></div>
+</div>
+
+<script>
+(() => {
+    const landing = document.getElementById("landing");
+    const results = document.getElementById("results");
+    const grid = document.getElementById("results-grid");
+    const queryView = document.getElementById("query-view");
+    const overlay = document.getElementById("overlay");
+    const workingText = document.getElementById("working-text");
+    const errorBox = document.getElementById("error");
+    const videoInput = document.getElementById("video-input");
+    const filename = document.getElementById("filename");
+    const textForm = document.getElementById("text-form");
+    const textQuery = document.getElementById("text-query");
+
+    const escapeHtml = (value) => {
+        const node = document.createElement("div");
+        node.textContent = value == null ? "" : String(value);
+        return node.innerHTML;
+    };
+
+    function setWorking(active, message = "Searching…") {
+        workingText.textContent = message;
+        overlay.classList.toggle("active", active);
+    }
+
+    function showError(message) {
+        errorBox.textContent = message;
+        errorBox.style.display = "block";
+    }
+
+    function clearError() {
+        errorBox.textContent = "";
+        errorBox.style.display = "none";
+    }
+
+    async function readResponse(response) {
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || data.error) {
+            throw new Error(data.error || "Request failed (" + response.status + ")");
+        }
+        return data;
+    }
+
+    function showResults() {
+        landing.style.display = "none";
+        results.style.display = "block";
+    }
+
+    function renderTextQuery(text) {
+        queryView.innerHTML = "<div class=\"query-copy\">💬 " + escapeHtml(text) + "</div>";
+    }
+
+    function renderVideoQuery(url) {
+        queryView.innerHTML = "<video controls src=\"" + escapeHtml(url) + "\"></video>";
+    }
+
+    function renderResults(items) {
+        if (!items || items.length === 0) {
+            grid.innerHTML = "<div class=\"notice\">No matching incidents were returned.</div>";
+            return;
+        }
+        grid.innerHTML = items.map((item, index) => {
+            const labels = item.labels || {};
+            const labelRows = [
+                ["Action", labels.action],
+                ["Offence", labels.offence],
+                ["Severity", labels.severity],
+                ["Contact", labels.contact],
+            ].filter((entry) => entry[1]).map((entry) =>
+                "<div class=\"label\"><b>" + escapeHtml(entry[0]) + ":</b> " +
+                escapeHtml(entry[1]) + "</div>"
+            ).join("");
+            const media = item.video_url
+                ? "<video controls preload=\"metadata\" src=\"" + escapeHtml(item.video_url) + "\"></video>"
+                : "<div class=\"unavailable\">Video unavailable</div>";
+            return "<article class=\"card\">" +
+                "<div class=\"card-head\">Match " + (index + 1) + "<span>" +
+                escapeHtml(item.action_id || item.path || "") + "</span></div>" +
+                media +
+                "<details><summary>Details</summary><div class=\"details\">" +
+                "<div class=\"score\">" + escapeHtml(item.score_display) +
+                "<small>cosine similarity</small></div>" +
+                (labelRows || "<div class=\"notice\">No labels available.</div>") +
+                "</div></details></article>";
+        }).join("");
+    }
+
+    if (textForm) {
+        textForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const query = textQuery.value.trim();
+            if (!query) return;
+            clearError();
+            setWorking(true, "Embedding your description and searching…");
+            try {
+                const response = await fetch("/api/search_text", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({query}),
+                });
+                const data = await readResponse(response);
+                renderTextQuery(query);
+                renderResults(data.results);
+                showResults();
+            } catch (error) {
+                showError(error.message);
+            } finally {
+                setWorking(false);
+            }
+        });
+    }
+
+    videoInput.addEventListener("change", async () => {
+        const file = videoInput.files[0];
+        if (!file) return;
+        filename.textContent = file.name;
+        clearError();
+        setWorking(true, "Embedding your video and searching…");
+        const body = new FormData();
+        body.append("video", file);
+        try {
+            const response = await fetch("/api/search_video", {method: "POST", body});
+            const data = await readResponse(response);
+            renderVideoQuery(data.query_video_url || URL.createObjectURL(file));
+            renderResults(data.results);
+            showResults();
+        } catch (error) {
+            showError(error.message);
+        } finally {
+            setWorking(false);
+        }
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+        clearError();
+        videoInput.value = "";
+        filename.textContent = "";
+        if (textQuery) textQuery.value = "";
+        queryView.innerHTML = "";
+        grid.innerHTML = "";
+        landing.style.display = "block";
+        results.style.display = "none";
+    });
+})();
+</script>
+</body>
+</html>
