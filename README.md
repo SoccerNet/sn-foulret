@@ -5,47 +5,19 @@ retrieval of soccer fouls: given a query foul, retrieve past fouls a referee wou
 equivalently, regardless of camera angle, teams, or appearance. Accompanies the paper
 *SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Fouls*. 
 
-The repository ships the human-verified **precedent-relevance judgments**
-(`data/foulret/`), the complete
-VARS+XVARS text-mediated pipeline (`retrieval/vars_xvars/`), and compact published rankings for numerical
-verification. Video, indexes, and model checkpoints are regenerated from the code here (see
-*Reproduce the tables*).
+The repository includes the FoulRet judgments, retrieval code, and published
+rankings needed to verify the reported results.
 
 ## Layout
 
 ```
-prepare_dataset.py      create the self-contained 16-frame MVFoul dataset
-evaluation/             paper-table evaluation
-  metrics.py              shared rank metrics, mAP, and random baselines
-  precedent.py            precedent relevance  -> Table 3, including confidence intervals
-  category.py             category relevance   -> Table 4, including confidence intervals
-  instruction_ablation.py instruction ablation -> Table 5
-data/
-  foulret/                tracked FoulRet judgments for Valid and Test queries
-  mvfouls/                downloaded SoccerNet-MVFoul dataset (git-ignored)
-  mvfouls_window/         generated 16-frame dataset (git-ignored)
-requirements/           dependency lists for the three model environments
-retrieval/               retrieval methods and published rankings
-  engine.py                FAISS retrieval engine
-  models/                  embedder adapters: InternVideo2, VLM2Vec-V2, Qwen3-VL-Embedding, LamRA
-    qwen3vl_backend.py       vendored official Qwen3-VL-Embedding implementation
-  build_full_index.py      embed every Train clip and build the full gallery index
-  derive_label_complete_indexes.py
-                            derive the two Table 4 indexes without re-embedding
-  retrieve.py              full/multi-view retrieval, including the instruction ablation
-  rankings/                published rankings for every visual retrieval model
-    instruction_ablation/  published generic/domain/detailed instruction rankings
-  indexes/                 generated FAISS indexes (git-ignored)
-  vars_xvars/              complete VARS+XVARS text-mediated baseline
-    retrieve.py              filter by VARS attributes and rank with XVARS-answer similarity
-    vars_attributes/         predicted Action class and Offence attributes by split
-    xvars_answers/           four generated referee answers per action and split
-    corpus_embeddings/       released Train-answer BGE vectors and aligned action IDs
-    rankings/                published Valid/Test retrieval rankings
-scripts/
-  setup/                  optional environment-creation shortcuts
-  slurm/                  optional SLURM launchers for the GPU stages
-train_qwen3vl.py         task-specific Qwen3-VL LoRA + label-supervised InfoNCE baseline
+data/foulret/         FoulRet benchmark judgments
+evaluation/          evaluation for Tables 3--5
+retrieval/           retrieval methods, indexes, and rankings
+requirements/        environment-specific dependencies
+scripts/             optional setup and SLURM helpers
+prepare_dataset.py   create the 16-frame MVFoul dataset
+train_qwen3vl.py     fine-tune Qwen3-VL-Embedding-2B
 ```
 
 All commands below assume that the current directory is the repository root.
@@ -61,24 +33,22 @@ Create only the environments required for the result you want to reproduce:
 
 ## Setup
 
-**1. Clone with submodules** — the VLM2Vec-V2 and InternVideo2 models load code from upstream repos
-pinned under `Clones/`, so clone recursively:
+**1. Clone with submodules**
 
 ```bash
 git clone --recursive https://github.com/SoccerNet/sn-foulret.git
 cd sn-foulret
-git submodule status
 ```
 
-The last command should print one InternVideo commit and one VLM2Vec commit,
-neither prefixed with `-`. If the repository was cloned without `--recursive`, run:
+If you already cloned without `--recursive`, run:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-**2. Virtual environments** — first-time users who only want to verify the
-released tables can start with the small CPU evaluation environment:
+**2. Virtual environments**
+
+To verify the released tables without running a model:
 
 ```bash
 python3.11 -m venv .venv_eval
@@ -87,9 +57,7 @@ python -m pip install --upgrade pip
 pip install -r requirements/evaluation.txt
 ```
 
-The model families require separate, incompatible dependency stacks. Create
-only the additional environments you need. Activating one environment replaces
-the previously active environment in the current shell.
+Create only the model environment you need.
 
 Qwen3-VL-Embedding:
 
@@ -127,8 +95,8 @@ pip install "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8
 pip install -r requirements/internvideo2.txt
 ```
 
-The supplied FlashAttention wheel targets Linux, Python 3.11, Torch 2.4, and
-CUDA 12. Use a compatible FlashAttention installation on a different platform.
+Use a compatible FlashAttention wheel if your Python, Torch, or CUDA versions
+differ.
 
 Model weights are downloaded from Hugging Face on first use. InternVideo2-1B
 is gated: accept the conditions on the
@@ -140,30 +108,13 @@ source .venv_internvideo2/bin/activate
 hf auth login
 ```
 
-The InternVideo2-1B checkpoint is approximately 2.8 GB and the 6B checkpoint is
-approximately 29 GB. Set `HF_HOME` to a filesystem with enough space before the
-first run when necessary.
-
-The setup scripts perform the same installations, add persistent cluster
-`PYTHONPATH` isolation, and verify imports:
-
-```bash
-bash scripts/setup/qwen.sh          # .venv
-bash scripts/setup/vlm2vec.sh       # .venv_vlm2vec
-bash scripts/setup/internvideo2.sh  # .venv_internvideo2
-```
-
-These optional shortcuts remove and recreate their target environment
-directories. On a tight-quota home, set `PIP_CACHE_DIR` and `TMPDIR` to a
-roomier filesystem first. All later commands run directly in a shell; SLURM is
-optional.
+Equivalent optional setup scripts are available under `scripts/setup/`.
 
 ## Data
 
-Obtain [SoccerNet-MVFoul](https://www.soccer-net.org/) and place the untouched download at
-`data/mvfouls/`, with clips under
-`{Train,Valid,Test}/action_<i>/clip_*.mp4` and an `annotations.json` in each split. **Train** is
-the retrieval gallery; **Valid + Test** are the queries.
+Obtain [SoccerNet-MVFoul](https://www.soccer-net.org/) and place it at
+`data/mvfouls/`. Each `{Train,Valid,Test}` split must contain its action folders
+and `annotations.json`. Train is the gallery; Valid and Test are the queries.
 
 The paper does not embed the raw clips directly. Before building an index or running retrieval,
 extract the same 16-frame temporal window used by VARS:
@@ -173,35 +124,22 @@ source .venv/bin/activate       # or either model-specific environment
 python prepare_dataset.py       # -> data/mvfouls_window/
 ```
 
-This converts 8,297 source clips in a complete MVFoul download and can be
-resumed: existing output clips are skipped. To verify the released tables
-without regenerating embeddings, copy only the required annotations instead:
+To verify the released rankings without processing videos, copy only the
+annotations:
 
 ```bash
 source .venv_eval/bin/activate
 python prepare_dataset.py --annotations-only
 ```
 
-The annotations-only output is sufficient for evaluation, but not for model
-training, indexing, or retrieval. After full preprocessing, this command should
-print `8297`:
+Full preprocessing is required for training and retrieval. A complete prepared
+dataset contains 8,297 clips:
 
 ```bash
 find data/mvfouls_window -name 'clip_*.mp4' | wc -l
 ```
 
-After preprocessing, the prepared dataset is self-contained:
-
-```text
-data/foulret/           tracked FoulRet precedent-relevance judgments
-data/mvfouls/           original SoccerNet-MVFoul download; preprocessing input only
-data/mvfouls_window/    generated 16-frame clips plus copied annotations; used thereafter
-```
-
-All training, indexing, retrieval, and evaluation commands use `data/mvfouls_window`; none reads
-the original directory after preprocessing. You may therefore archive or delete `data/mvfouls`
-after confirming extraction completed successfully. Do not point the embedding models at the raw
-clips when reproducing the paper results.
+All subsequent commands use `data/mvfouls_window/`.
 
 
 ## Evaluate your own retrieval method
@@ -241,18 +179,8 @@ python -m evaluation.category \
   --method-name "My Model"
 ```
 
-The precedent command reads only `test_full.json` and `valid_full.json`. The
-category command reproduces the paper's label-complete gallery protocol: Action
-and Action+Offence use the `action_offence` files, while
-Action+Offence+Severity uses the `action_offence_severity` files. These rankings
-can be produced by searching the derived indexes described below. If instead
-you intentionally want to measure all three category tiers against the complete
-gallery, pass `--full`; that mode reads only the two `full` files and is not the
-Table 4 protocol.
-
-The loader rejects malformed rankings and duplicate candidates. A benchmark
-query omitted from a file is treated as having an empty ranking, so it receives
-zero credit rather than being silently excluded.
+Precedent relevance uses the `full` files. Category relevance uses the
+`action_offence` and `action_offence_severity` files.
 
 ## Reproduce the tables
 
@@ -266,12 +194,8 @@ python -m evaluation.category             # Table 4, including 20,000-resample C
 python -m evaluation.instruction_ablation # Table 5
 ```
 
-Evaluation is CPU-only. The remaining commands in this section regenerate the
-released rankings from the models. As quick checks, the fine-tuned model should
-report `HR@10 = 3.75` in Table 3 and `Action@1 = 40.3` in Table 4. Bootstrap
-intervals are generated deterministically with seed `20260829`; pass
-`--bootstrap-resamples 0` to either of the first two commands when checking only
-the point estimates.
+Evaluation is CPU-only. As quick checks, the fine-tuned model should report
+`HR@10 = 3.75` in Table 3 and `Action@1 = 40.3` in Table 4.
 
 ### Regenerate visual-model rankings
 
@@ -320,8 +244,7 @@ python -m evaluation.category
 ```
 
 The retrieval command writes all six ranking files required by Tables 3 and 4.
-For InternVideo2, the instruction argument is accepted but ignored because the
-model is video-only. Repeat these commands for:
+Repeat these commands for:
 
 ```text
 internvideo2-1b
@@ -332,11 +255,8 @@ lamra
 qwen3vl-8b
 ```
 
-Table 3 uses the full Train gallery. Table 4 additionally uses the two
-label-complete indexes created by `derive_label_complete_indexes`; that command
-reuses the stored vectors and does not embed videos again. Regeneration writes
-directly to the released ranking paths; `git diff` can be used to compare the
-new rankings with the checked-in references.
+Regeneration overwrites the corresponding released rankings. Use `git diff` to
+compare them with the checked-in versions.
 
 ### Regenerate the VARS+XVARS rankings
 
@@ -395,35 +315,8 @@ python -m evaluation.instruction_ablation
 
 ### Task-specific fine-tuned baseline
 
-To test benchmark learnability beyond zero-shot general-purpose representations,
-`train_qwen3vl.py` adapts `Qwen/Qwen3-VL-Embedding-2B` with LoRA and a symmetric,
-hierarchical multi-positive InfoNCE objective. It averages three equally weighted
-losses whose positive pairs are Train actions sharing increasingly strict label
-prefixes:
-
-```
-Action class
-Action class + Offence
-Action class + Offence + Severity
-```
-
-Actions without a meaningful severity label contribute to the first two losses
-and are masked from the third. Balanced P-by-K batches provide positive pairs and
-negative label groups. Each action is embedded both as a query, using `Retrieve
-videos similar to the query video.`, and as a gallery document, using the model's
-neutral document instruction. All camera clips are embedded and mean-pooled from
-the same 16-frame inputs under `data/mvfouls_window`.
-
-Only the Train split is used for optimization. Early stopping uses a deterministic,
-label-stratified 10% holdout from Train; paper Valid and Test queries are never used
-for training or model selection. Check the data construction without loading the
-model with:
-
-```bash
-python train_qwen3vl.py --data_only
-```
-
-Run the complete fine-tuned pipeline directly:
+Fine-tune Qwen3-VL-Embedding-2B with the paper configuration, then build its
+indexes and rankings:
 
 ```bash
 source .venv/bin/activate
@@ -472,16 +365,9 @@ python -m evaluation.precedent
 python -m evaluation.category
 ```
 
-Training uses AdamW. The adapter is written to
-`finetuning_outputs/qwen3vl-2b-labelsup/best_model`; indexes and rankings use
-the standard `retrieval/` layout.
-
 ### Optional SLURM launchers
 
-SLURM is not required. The files under `scripts/slurm/` are optional launchers
-for clusters using `sbatch`; they execute the same commands documented above
-while adding resource requests, environment activation, logging, and job
-ordering.
+SLURM is not required. Optional launchers are available under `scripts/slurm/`:
 
 ```bash
 # Build both index stages, then launch dependent retrieval jobs
@@ -494,17 +380,12 @@ sbatch scripts/slurm/run_vars_xvars.sbatch
 sbatch scripts/slurm/run_finetune_qwen3vl.sbatch
 ```
 
-The supplied launchers request A100 GPUs from a partition named `batch` and
-load a `python/3.11.0` environment module. Those scheduler settings may need
-adjustment on other clusters; none affects the Python commands or experiment
-configuration described above.
+Adjust the scheduler directives for your cluster.
 
 ## Not tracked
 
-Large generated artifacts are git-ignored: `data/mvfouls/`, `data/mvfouls_window/`, FAISS
-indexes and query-vector caches under `retrieval/`, fine-tuning checkpoints, and Slurm
-logs. The compact reference ranking JSON files and VARS+XVARS corpus embeddings are included so the
-published metrics can be verified without rerunning the GPU models.
+Downloaded data, indexes, caches, checkpoints, and SLURM logs are git-ignored.
+Reference rankings and VARS+XVARS embeddings are included.
 
 ## Citation
 
