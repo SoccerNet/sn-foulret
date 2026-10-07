@@ -112,7 +112,7 @@ Equivalent optional setup scripts are available under `scripts/setup/`.
 
 ## Data
 
-Obtain [SoccerNet-MVFoul](https://www.soccer-net.org/) and place it at
+Obtain [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and place it in
 `data/mvfouls/`. Each `{Train,Valid,Test}` split must contain its action folders
 and `annotations.json`. Train is the gallery; Valid and Test are the queries.
 
@@ -124,18 +124,11 @@ source .venv/bin/activate       # or either model-specific environment
 python prepare_dataset.py       # -> data/mvfouls_window/
 ```
 
-To evaluate existing rankings without processing videos, copy only the annotations:
+To evaluate the existing rankings already in the codebase without processing videos, copy only the annotations:
 
 ```bash
 source .venv_eval/bin/activate
 python prepare_dataset.py --annotations-only
-```
-
-Full preprocessing is required for training and retrieval. A complete prepared
-dataset contains 8,297 clips:
-
-```bash
-find data/mvfouls_window -name 'clip_*.mp4' | wc -l
 ```
 
 All subsequent commands use `data/mvfouls_window/`.
