@@ -116,14 +116,6 @@ hf auth login
 
 Equivalent optional setup scripts are available under `scripts/setup/`.
 
-To run the browser demo, also install its lightweight web dependency into the
-model environment you plan to use:
-
-```bash
-source .venv/bin/activate       # or .venv_vlm2vec / .venv_internvideo2
-pip install -r requirements/demo.txt
-```
-
 ## Data
 
 Obtain [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and place it in
@@ -219,22 +211,109 @@ Results are written to `retrieval/vars_xvars/rankings/`.
 
 ## Run the local demo
 
-The Flask demo searches a prebuilt Train FAISS index. Prepare
-`data/mvfouls_window/` as described above, install `requirements/demo.txt` in
-the chosen model environment, and build the model index using the command in
-the retrieval section. Then run:
+The Flask demo accepts an uploaded MP4 or text description and retrieves the
+most similar actions from the Train gallery. The default Qwen3-VL setup needs
+Python 3.11, access to SoccerNet-MVFoul, and a prebuilt FAISS index. An NVIDIA
+GPU is strongly recommended for building the index and running inference.
+
+The dataset and index are not included in the repository. Starting from a
+clean clone, run the following steps from the repository root.
+
+### 1. Install the demo environment
+
+```bash
+git submodule update --init --recursive
+
+python3.11 -m venv .venv
+source .venv/bin/activate
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements/qwen.txt -r requirements/demo.txt
+```
+
+### 2. Prepare SoccerNet-MVFoul
+
+Download [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and arrange
+it as follows:
+
+```text
+data/mvfouls/
+  Train/
+    annotations.json
+    action_*/clip_*.mp4
+  Valid/
+    annotations.json
+    action_*/clip_*.mp4
+  Test/
+    annotations.json
+    action_*/clip_*.mp4
+```
+
+Extract the 16-frame windows used by the released models:
+
+```bash
+python prepare_dataset.py
+```
+
+This creates `data/mvfouls_window/{Train,Valid,Test}/`.
+
+### 3. Build the Train index
+
+Building the full gallery index is a separate, GPU-intensive step. Model
+weights are downloaded from Hugging Face on first use.
+
+```bash
+python -m retrieval.build_full_index \
+  --model qwen3vl-2b \
+  --data_dir data/mvfouls_window \
+  --index_dir retrieval/indexes/qwen3vl-2b \
+  --nframes 16 \
+  --clip_mode multi_clip
+```
+
+The command must produce both files below:
+
+```text
+retrieval/indexes/qwen3vl-2b/embeddings_train.json
+retrieval/indexes/qwen3vl-2b/faiss_index_train.bin
+```
+
+### 4. Start the demo
 
 ```bash
 bash Demo/run_flask_app.sh
 ```
 
-If the index is missing, the launcher stops without downloading weights or
-starting an index build. It prints a warning, the expected index files, and the
-exact `retrieval.build_full_index` command that must be completed first.
+Open [http://localhost:5000](http://localhost:5000). The launcher never builds
+an index automatically. If an index file is missing, it exits with a warning
+and prints the exact build command that must be completed first.
 
-Once the index exists, rerun the launcher and open
-[http://localhost:5000](http://localhost:5000). Configure another model or port
-with environment variables:
+### Quick smoke test
+
+To verify the UI without indexing the complete Train gallery, build a separate
+ten-action index:
+
+```bash
+SMOKE_INDEX=retrieval/indexes/qwen3vl-2b-smoke
+
+python -m retrieval.build_full_index \
+  --model qwen3vl-2b \
+  --data_dir data/mvfouls_window \
+  --index_dir "$SMOKE_INDEX" \
+  --nframes 16 \
+  --clip_mode multi_clip \
+  --limit 10
+
+INDEX_DIR="$PWD/$SMOKE_INDEX" bash Demo/run_flask_app.sh
+```
+
+The smoke index is only for checking the installation and interface; its search
+results are not representative of the full benchmark.
+
+### Other models and settings
+
+Configure another model or port with environment variables:
 
 ```bash
 MODEL=vlm2vec-v2 PORT=8080 bash Demo/run_flask_app.sh
@@ -252,6 +331,16 @@ to the internet.
 
 All registered models support uploaded MP4 queries. Text-to-video queries are
 available for Qwen3-VL models; the other adapters are video-to-video only.
+
+### Troubleshooting
+
+| Message or symptom | Resolution |
+|---|---|
+| `Virtual environment not found` | Create the model-specific environment from the Setup section. |
+| `Flask is not installed` | Activate that environment and run `pip install -r requirements/demo.txt`. |
+| `Prepared Train data not found` | Check the dataset layout, then run `python prepare_dataset.py`. |
+| `The Train index required by the demo is missing` | Run the printed `retrieval.build_full_index` command, then restart the launcher. |
+| Model download is unauthorized | For a gated model, accept its access conditions and authenticate with `hf auth login`. |
 
 ## Evaluate rankings
 
