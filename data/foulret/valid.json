@@ -1,0 +1,5156 @@
+[
+    {
+        "id_valid": "0",
+        "status": "done",
+        "final_ranking": [
+            "200",
+            "195",
+            "1128",
+            "2500",
+            "2827"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "1",
+        "status": "done",
+        "final_ranking": [
+            "2066",
+            "521",
+            "1011"
+        ],
+        "rejected": [
+            "2655",
+            "1558"
+        ]
+    },
+    {
+        "id_valid": "2",
+        "status": "done",
+        "final_ranking": [
+            "2574",
+            "525",
+            "2261",
+            "2773"
+        ],
+        "rejected": [
+            "1966"
+        ]
+    },
+    {
+        "id_valid": "3",
+        "status": "done",
+        "final_ranking": [
+            "207",
+            "499",
+            "388"
+        ],
+        "rejected": [
+            "341",
+            "1346"
+        ]
+    },
+    {
+        "id_valid": "4",
+        "status": "done",
+        "final_ranking": [
+            "2199",
+            "1335",
+            "1464"
+        ],
+        "rejected": [
+            "1844",
+            "525"
+        ]
+    },
+    {
+        "id_valid": "5",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "747",
+            "2193",
+            "1989"
+        ],
+        "rejected": [
+            "1720"
+        ]
+    },
+    {
+        "id_valid": "6",
+        "status": "done",
+        "final_ranking": [
+            "1871",
+            "207"
+        ],
+        "rejected": [
+            "468",
+            "499",
+            "1942"
+        ]
+    },
+    {
+        "id_valid": "7",
+        "status": "done",
+        "final_ranking": [
+            "1995",
+            "1605",
+            "2873",
+            "658"
+        ],
+        "rejected": [
+            "2582"
+        ]
+    },
+    {
+        "id_valid": "8",
+        "status": "done",
+        "final_ranking": [
+            "500",
+            "2153",
+            "2639"
+        ],
+        "rejected": [
+            "2467",
+            "404"
+        ]
+    },
+    {
+        "id_valid": "9",
+        "status": "done",
+        "final_ranking": [
+            "2385",
+            "2249",
+            "2719",
+            "2542"
+        ],
+        "rejected": [
+            "1209"
+        ]
+    },
+    {
+        "id_valid": "10",
+        "status": "done",
+        "final_ranking": [
+            "2843",
+            "808",
+            "2181",
+            "2624"
+        ],
+        "rejected": [
+            "2669"
+        ]
+    },
+    {
+        "id_valid": "11",
+        "status": "done",
+        "final_ranking": [
+            "2425"
+        ],
+        "rejected": [
+            "176",
+            "2024",
+            "1836",
+            "587"
+        ]
+    },
+    {
+        "id_valid": "12",
+        "status": "done",
+        "final_ranking": [
+            "2368",
+            "2780",
+            "889"
+        ],
+        "rejected": [
+            "2369",
+            "2745"
+        ]
+    },
+    {
+        "id_valid": "13",
+        "status": "done",
+        "final_ranking": [
+            "2881",
+            "932",
+            "2227",
+            "2601",
+            "1874"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "14",
+        "status": "done",
+        "final_ranking": [
+            "2885",
+            "1128",
+            "327",
+            "200",
+            "299"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "15",
+        "status": "done",
+        "final_ranking": [
+            "487",
+            "939",
+            "454"
+        ],
+        "rejected": [
+            "526",
+            "1544"
+        ]
+    },
+    {
+        "id_valid": "16",
+        "status": "done",
+        "final_ranking": [
+            "1275",
+            "562",
+            "1057"
+        ],
+        "rejected": [
+            "2855",
+            "1413"
+        ]
+    },
+    {
+        "id_valid": "17",
+        "status": "done",
+        "final_ranking": [
+            "1941",
+            "72",
+            "2680",
+            "2832"
+        ],
+        "rejected": [
+            "480"
+        ]
+    },
+    {
+        "id_valid": "18",
+        "status": "done",
+        "final_ranking": [
+            "1777",
+            "820",
+            "2881",
+            "932",
+            "2227"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "19",
+        "status": "done",
+        "final_ranking": [
+            "23",
+            "2334",
+            "735",
+            "79",
+            "377"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "20",
+        "status": "done",
+        "final_ranking": [
+            "40",
+            "456",
+            "1366"
+        ],
+        "rejected": [
+            "2251",
+            "2197"
+        ]
+    },
+    {
+        "id_valid": "21",
+        "status": "done",
+        "final_ranking": [
+            "817",
+            "652",
+            "731",
+            "2225"
+        ],
+        "rejected": [
+            "1066"
+        ]
+    },
+    {
+        "id_valid": "22",
+        "status": "done",
+        "final_ranking": [
+            "228",
+            "525",
+            "1966",
+            "2574"
+        ],
+        "rejected": [
+            "1030"
+        ]
+    },
+    {
+        "id_valid": "23",
+        "status": "done",
+        "final_ranking": [
+            "793",
+            "1627",
+            "110",
+            "164"
+        ],
+        "rejected": [
+            "999"
+        ]
+    },
+    {
+        "id_valid": "24",
+        "status": "done",
+        "final_ranking": [
+            "598",
+            "885",
+            "731",
+            "652"
+        ],
+        "rejected": [
+            "1066"
+        ]
+    },
+    {
+        "id_valid": "25",
+        "status": "done",
+        "final_ranking": [
+            "2849",
+            "290",
+            "2794",
+            "1177"
+        ],
+        "rejected": [
+            "334"
+        ]
+    },
+    {
+        "id_valid": "26",
+        "status": "done",
+        "final_ranking": [
+            "1297",
+            "1716",
+            "1095",
+            "2524",
+            "1067"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "27",
+        "status": "done",
+        "final_ranking": [
+            "158",
+            "1912"
+        ],
+        "rejected": [
+            "493",
+            "2467",
+            "1666"
+        ]
+    },
+    {
+        "id_valid": "28",
+        "status": "done",
+        "final_ranking": [
+            "653",
+            "744",
+            "462",
+            "656",
+            "1285"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "29",
+        "status": "done",
+        "final_ranking": [
+            "1028",
+            "1820"
+        ],
+        "rejected": [
+            "666",
+            "719",
+            "966"
+        ]
+    },
+    {
+        "id_valid": "30",
+        "status": "done",
+        "final_ranking": [
+            "1078",
+            "1368",
+            "1865",
+            "1349"
+        ],
+        "rejected": [
+            "957"
+        ]
+    },
+    {
+        "id_valid": "31",
+        "status": "done",
+        "final_ranking": [
+            "500",
+            "668",
+            "645",
+            "827",
+            "817"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "32",
+        "status": "done",
+        "final_ranking": [
+            "454",
+            "1851",
+            "1308",
+            "2793"
+        ],
+        "rejected": [
+            "2449"
+        ]
+    },
+    {
+        "id_valid": "33",
+        "status": "done",
+        "final_ranking": [
+            "701",
+            "70",
+            "2575",
+            "600",
+            "1152"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "34",
+        "status": "done",
+        "final_ranking": [
+            "453",
+            "980"
+        ],
+        "rejected": [
+            "1465",
+            "1134",
+            "866"
+        ]
+    },
+    {
+        "id_valid": "35",
+        "status": "done",
+        "final_ranking": [
+            "1082",
+            "914",
+            "2787",
+            "658"
+        ],
+        "rejected": [
+            "1605"
+        ]
+    },
+    {
+        "id_valid": "36",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "2283",
+            "1989"
+        ],
+        "rejected": [
+            "2333",
+            "1998"
+        ]
+    },
+    {
+        "id_valid": "37",
+        "status": "done",
+        "final_ranking": [
+            "1002",
+            "1533",
+            "327",
+            "200"
+        ],
+        "rejected": [
+            "2703"
+        ]
+    },
+    {
+        "id_valid": "38",
+        "status": "done",
+        "final_ranking": [
+            "1415",
+            "1284",
+            "2670",
+            "1989"
+        ],
+        "rejected": [
+            "2019"
+        ]
+    },
+    {
+        "id_valid": "39",
+        "status": "done",
+        "final_ranking": [
+            "2697",
+            "1466"
+        ],
+        "rejected": [
+            "25",
+            "162",
+            "473"
+        ]
+    },
+    {
+        "id_valid": "40",
+        "status": "done",
+        "final_ranking": [
+            "1007",
+            "772",
+            "298",
+            "2610"
+        ],
+        "rejected": [
+            "2438"
+        ]
+    },
+    {
+        "id_valid": "41",
+        "status": "done",
+        "final_ranking": [
+            "2388",
+            "1446",
+            "1215",
+            "1049"
+        ],
+        "rejected": [
+            "1336"
+        ]
+    },
+    {
+        "id_valid": "42",
+        "status": "done",
+        "final_ranking": [
+            "431"
+        ],
+        "rejected": [
+            "479",
+            "1385",
+            "792",
+            "1713"
+        ]
+    },
+    {
+        "id_valid": "43",
+        "status": "done",
+        "final_ranking": [
+            "1368",
+            "1865",
+            "1349",
+            "1839"
+        ],
+        "rejected": [
+            "1078"
+        ]
+    },
+    {
+        "id_valid": "44",
+        "status": "done",
+        "final_ranking": [
+            "715",
+            "2619",
+            "1413",
+            "1839"
+        ],
+        "rejected": [
+            "1341"
+        ]
+    },
+    {
+        "id_valid": "45",
+        "status": "done",
+        "final_ranking": [
+            "965",
+            "2289",
+            "1070",
+            "1447",
+            "1116"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "46",
+        "status": "done",
+        "final_ranking": [
+            "2383",
+            "2158",
+            "958",
+            "415",
+            "1985"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "47",
+        "status": "done",
+        "final_ranking": [
+            "786"
+        ],
+        "rejected": [
+            "792",
+            "936",
+            "793",
+            "99"
+        ]
+    },
+    {
+        "id_valid": "48",
+        "status": "done",
+        "final_ranking": [
+            "668",
+            "2894",
+            "2229",
+            "500",
+            "1446"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "49",
+        "status": "done",
+        "final_ranking": [
+            "985",
+            "1338",
+            "2299",
+            "796"
+        ],
+        "rejected": [
+            "1613"
+        ]
+    },
+    {
+        "id_valid": "50",
+        "status": "done",
+        "final_ranking": [
+            "930",
+            "1706",
+            "2828"
+        ],
+        "rejected": [
+            "905",
+            "2114"
+        ]
+    },
+    {
+        "id_valid": "51",
+        "status": "done",
+        "final_ranking": [
+            "806",
+            "771",
+            "736",
+            "1327"
+        ],
+        "rejected": [
+            "2628"
+        ]
+    },
+    {
+        "id_valid": "52",
+        "status": "done",
+        "final_ranking": [
+            "317",
+            "2105"
+        ],
+        "rejected": [
+            "2896",
+            "1864",
+            "1530"
+        ]
+    },
+    {
+        "id_valid": "53",
+        "status": "done",
+        "final_ranking": [
+            "1979",
+            "622",
+            "575",
+            "318"
+        ],
+        "rejected": [
+            "2172"
+        ]
+    },
+    {
+        "id_valid": "54",
+        "status": "done",
+        "final_ranking": [
+            "417"
+        ],
+        "rejected": [
+            "1528",
+            "2837",
+            "268",
+            "2617"
+        ]
+    },
+    {
+        "id_valid": "55",
+        "status": "done",
+        "final_ranking": [
+            "892",
+            "2499",
+            "2106",
+            "2598"
+        ],
+        "rejected": [
+            "2597"
+        ]
+    },
+    {
+        "id_valid": "56",
+        "status": "done",
+        "final_ranking": [
+            "327",
+            "299",
+            "143",
+            "1533",
+            "2885"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "57",
+        "status": "done",
+        "final_ranking": [
+            "2578",
+            "2307",
+            "500",
+            "1705"
+        ],
+        "rejected": [
+            "985"
+        ]
+    },
+    {
+        "id_valid": "58",
+        "status": "done",
+        "final_ranking": [
+            "1436",
+            "918",
+            "2217"
+        ],
+        "rejected": [
+            "2339",
+            "1799"
+        ]
+    },
+    {
+        "id_valid": "59",
+        "status": "done",
+        "final_ranking": [
+            "593",
+            "1405",
+            "1428",
+            "929",
+            "1211"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "60",
+        "status": "done",
+        "final_ranking": [
+            "334",
+            "1969",
+            "1493"
+        ],
+        "rejected": [
+            "131",
+            "2794"
+        ]
+    },
+    {
+        "id_valid": "61",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "1987",
+            "2283"
+        ],
+        "rejected": [
+            "2333",
+            "404"
+        ]
+    },
+    {
+        "id_valid": "62",
+        "status": "done",
+        "final_ranking": [
+            "244",
+            "2892",
+            "2047",
+            "2645",
+            "430"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "63",
+        "status": "done",
+        "final_ranking": [
+            "780",
+            "1023",
+            "1068",
+            "1410"
+        ],
+        "rejected": [
+            "2520"
+        ]
+    },
+    {
+        "id_valid": "64",
+        "status": "done",
+        "final_ranking": [
+            "2126",
+            "2530",
+            "2232",
+            "1962"
+        ],
+        "rejected": [
+            "2208"
+        ]
+    },
+    {
+        "id_valid": "65",
+        "status": "done",
+        "final_ranking": [
+            "1828",
+            "1258",
+            "1211",
+            "1576"
+        ],
+        "rejected": [
+            "1211",
+            "758"
+        ]
+    },
+    {
+        "id_valid": "66",
+        "status": "done",
+        "final_ranking": [
+            "96",
+            "729",
+            "428",
+            "1917",
+            "1385"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "67",
+        "status": "done",
+        "final_ranking": [
+            "593",
+            "1405",
+            "462"
+        ],
+        "rejected": [
+            "744",
+            "1211"
+        ]
+    },
+    {
+        "id_valid": "68",
+        "status": "done",
+        "final_ranking": [
+            "1989",
+            "2193",
+            "2284",
+            "2598"
+        ],
+        "rejected": [
+            "892"
+        ]
+    },
+    {
+        "id_valid": "69",
+        "status": "done",
+        "final_ranking": [
+            "1675",
+            "2153",
+            "2332",
+            "2567"
+        ],
+        "rejected": [
+            "719"
+        ]
+    },
+    {
+        "id_valid": "70",
+        "status": "done",
+        "final_ranking": [
+            "448",
+            "1937",
+            "45",
+            "2305",
+            "1256"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "71",
+        "status": "done",
+        "final_ranking": [
+            "2144",
+            "756",
+            "759",
+            "1322",
+            "813"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "72",
+        "status": "done",
+        "final_ranking": [
+            "1985",
+            "958",
+            "415",
+            "2383",
+            "953"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "73",
+        "status": "done",
+        "final_ranking": [
+            "200",
+            "2500",
+            "1128",
+            "195",
+            "2366"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "74",
+        "status": "done",
+        "final_ranking": [
+            "1477"
+        ],
+        "rejected": [
+            "1111",
+            "1126",
+            "1949",
+            "870"
+        ]
+    },
+    {
+        "id_valid": "75",
+        "status": "done",
+        "final_ranking": [
+            "2164",
+            "99",
+            "999"
+        ],
+        "rejected": [
+            "164",
+            "982"
+        ]
+    },
+    {
+        "id_valid": "76",
+        "status": "done",
+        "final_ranking": [
+            "737",
+            "2519",
+            "645",
+            "2229"
+        ],
+        "rejected": [
+            "643"
+        ]
+    },
+    {
+        "id_valid": "77",
+        "status": "done",
+        "final_ranking": [
+            "600",
+            "494",
+            "786",
+            "648",
+            "570"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "78",
+        "status": "done",
+        "final_ranking": [
+            "747",
+            "691",
+            "2684",
+            "1989",
+            "1616"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "79",
+        "status": "done",
+        "final_ranking": [
+            "2794",
+            "1287",
+            "281",
+            "871"
+        ],
+        "rejected": [
+            "334"
+        ]
+    },
+    {
+        "id_valid": "80",
+        "status": "done",
+        "final_ranking": [
+            "653"
+        ],
+        "rejected": [
+            "1416",
+            "656",
+            "1211",
+            "1285"
+        ]
+    },
+    {
+        "id_valid": "81",
+        "status": "done",
+        "final_ranking": [
+            "1875",
+            "722",
+            "1151",
+            "850"
+        ],
+        "rejected": [
+            "1025"
+        ]
+    },
+    {
+        "id_valid": "82",
+        "status": "done",
+        "final_ranking": [
+            "600",
+            "570",
+            "428",
+            "490",
+            "494"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "83",
+        "status": "done",
+        "final_ranking": [
+            "2197",
+            "456"
+        ],
+        "rejected": [
+            "2251",
+            "40",
+            "2479"
+        ]
+    },
+    {
+        "id_valid": "84",
+        "status": "done",
+        "final_ranking": [
+            "158",
+            "2519",
+            "408",
+            "2229"
+        ],
+        "rejected": [
+            "2765"
+        ]
+    },
+    {
+        "id_valid": "85",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "2544",
+            "2697",
+            "1299",
+            "473",
+            "1374"
+        ]
+    },
+    {
+        "id_valid": "86",
+        "status": "done",
+        "final_ranking": [
+            "1430",
+            "1422"
+        ],
+        "rejected": [
+            "325",
+            "1566",
+            "1223"
+        ]
+    },
+    {
+        "id_valid": "87",
+        "status": "done",
+        "final_ranking": [
+            "654",
+            "817",
+            "399",
+            "2535"
+        ],
+        "rejected": [
+            "2765"
+        ]
+    },
+    {
+        "id_valid": "88",
+        "status": "done",
+        "final_ranking": [
+            "1104",
+            "673",
+            "2482",
+            "486",
+            "2616"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "89",
+        "status": "done",
+        "final_ranking": [
+            "336",
+            "2599",
+            "1070",
+            "2289",
+            "2905"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "90",
+        "status": "done",
+        "final_ranking": [
+            "448",
+            "45"
+        ],
+        "rejected": [
+            "1937",
+            "2079",
+            "2305"
+        ]
+    },
+    {
+        "id_valid": "91",
+        "status": "done",
+        "final_ranking": [
+            "2703",
+            "195",
+            "454",
+            "200"
+        ],
+        "rejected": [
+            "1851"
+        ]
+    },
+    {
+        "id_valid": "92",
+        "status": "done",
+        "final_ranking": [
+            "1528",
+            "1638",
+            "2279"
+        ],
+        "rejected": [
+            "268",
+            "2113"
+        ]
+    },
+    {
+        "id_valid": "93",
+        "status": "done",
+        "final_ranking": [
+            "2790",
+            "1346",
+            "207",
+            "1150",
+            "1871"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "94",
+        "status": "done",
+        "final_ranking": [
+            "814",
+            "2417",
+            "2518"
+        ],
+        "rejected": [
+            "660",
+            "1318"
+        ]
+    },
+    {
+        "id_valid": "95",
+        "status": "done",
+        "final_ranking": [
+            "2072",
+            "2333",
+            "1987",
+            "2375",
+            "1494"
+        ],
+        "rejected": [
+            "2072"
+        ]
+    },
+    {
+        "id_valid": "96",
+        "status": "done",
+        "final_ranking": [
+            "2620",
+            "2454",
+            "1169",
+            "1497",
+            "1112"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "97",
+        "status": "done",
+        "final_ranking": [
+            "2333",
+            "2008",
+            "1149",
+            "2494"
+        ],
+        "rejected": [
+            "404"
+        ]
+    },
+    {
+        "id_valid": "98",
+        "status": "done",
+        "final_ranking": [
+            "1195",
+            "2335",
+            "2189",
+            "404"
+        ],
+        "rejected": [
+            "397"
+        ]
+    },
+    {
+        "id_valid": "99",
+        "status": "done",
+        "final_ranking": [
+            "416",
+            "2334",
+            "377",
+            "2186"
+        ],
+        "rejected": [
+            "735"
+        ]
+    },
+    {
+        "id_valid": "100",
+        "status": "done",
+        "final_ranking": [
+            "454",
+            "318",
+            "233"
+        ],
+        "rejected": [
+            "179",
+            "438"
+        ]
+    },
+    {
+        "id_valid": "101",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": []
+    },
+    {
+        "id_valid": "102",
+        "status": "done",
+        "final_ranking": [
+            "207",
+            "1346",
+            "703",
+            "2532"
+        ],
+        "rejected": [
+            "499"
+        ]
+    },
+    {
+        "id_valid": "103",
+        "status": "done",
+        "final_ranking": [
+            "1211",
+            "466",
+            "1946",
+            "2206"
+        ],
+        "rejected": [
+            "656"
+        ]
+    },
+    {
+        "id_valid": "104",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "1998",
+            "2283",
+            "1989"
+        ],
+        "rejected": [
+            "404"
+        ]
+    },
+    {
+        "id_valid": "105",
+        "status": "done",
+        "final_ranking": [
+            "428",
+            "314",
+            "589",
+            "570",
+            "2509"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "106",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "404",
+            "691",
+            "747"
+        ],
+        "rejected": [
+            "2283"
+        ]
+    },
+    {
+        "id_valid": "107",
+        "status": "done",
+        "final_ranking": [
+            "434",
+            "2383",
+            "415",
+            "2158"
+        ],
+        "rejected": [
+            "747"
+        ]
+    },
+    {
+        "id_valid": "108",
+        "status": "done",
+        "final_ranking": [
+            "424",
+            "277",
+            "2394"
+        ],
+        "rejected": [
+            "252",
+            "2085"
+        ]
+    },
+    {
+        "id_valid": "109",
+        "status": "done",
+        "final_ranking": [
+            "2116",
+            "397",
+            "1653",
+            "1568",
+            "451"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "110",
+        "status": "done",
+        "final_ranking": [
+            "784",
+            "610",
+            "1077",
+            "2099",
+            "1056"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "111",
+        "status": "done",
+        "final_ranking": [
+            "299",
+            "200",
+            "1002"
+        ],
+        "rejected": [
+            "2091",
+            "195"
+        ]
+    },
+    {
+        "id_valid": "112",
+        "status": "done",
+        "final_ranking": [
+            "2875",
+            "918"
+        ],
+        "rejected": [
+            "923",
+            "2339",
+            "707"
+        ]
+    },
+    {
+        "id_valid": "113",
+        "status": "done",
+        "final_ranking": [
+            "1185",
+            "2789",
+            "2560",
+            "1669",
+            "1891"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "114",
+        "status": "done",
+        "final_ranking": [
+            "38",
+            "2824",
+            "237",
+            "220"
+        ],
+        "rejected": [
+            "151"
+        ]
+    },
+    {
+        "id_valid": "115",
+        "status": "done",
+        "final_ranking": [
+            "692",
+            "600",
+            "914",
+            "1609"
+        ],
+        "rejected": [
+            "2372"
+        ]
+    },
+    {
+        "id_valid": "116",
+        "status": "done",
+        "final_ranking": [
+            "499",
+            "2532"
+        ],
+        "rejected": [
+            "2604",
+            "207",
+            "1346"
+        ]
+    },
+    {
+        "id_valid": "117",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "397",
+            "404",
+            "1987",
+            "2335",
+            "1568"
+        ]
+    },
+    {
+        "id_valid": "118",
+        "status": "done",
+        "final_ranking": [
+            "2189",
+            "1675",
+            "404",
+            "500"
+        ],
+        "rejected": [
+            "2467"
+        ]
+    },
+    {
+        "id_valid": "119",
+        "status": "done",
+        "final_ranking": [
+            "158",
+            "2765",
+            "645"
+        ],
+        "rejected": [
+            "2229",
+            "567"
+        ]
+    },
+    {
+        "id_valid": "120",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "1513",
+            "2789",
+            "2703"
+        ],
+        "rejected": [
+            "614"
+        ]
+    },
+    {
+        "id_valid": "121",
+        "status": "done",
+        "final_ranking": [
+            "814",
+            "2518",
+            "1203"
+        ],
+        "rejected": [
+            "660",
+            "1318"
+        ]
+    },
+    {
+        "id_valid": "122",
+        "status": "done",
+        "final_ranking": [
+            "888",
+            "563",
+            "936",
+            "204"
+        ],
+        "rejected": [
+            "570"
+        ]
+    },
+    {
+        "id_valid": "123",
+        "status": "done",
+        "final_ranking": [
+            "2561",
+            "1617",
+            "2452"
+        ],
+        "rejected": [
+            "2289",
+            "1813"
+        ]
+    },
+    {
+        "id_valid": "124",
+        "status": "done",
+        "final_ranking": [
+            "747",
+            "1568"
+        ],
+        "rejected": [
+            "2684",
+            "1989",
+            "1556"
+        ]
+    },
+    {
+        "id_valid": "125",
+        "status": "done",
+        "final_ranking": [
+            "2564",
+            "380",
+            "2362",
+            "996",
+            "2531"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "126",
+        "status": "done",
+        "final_ranking": [
+            "748",
+            "1070",
+            "2452"
+        ],
+        "rejected": [
+            "1617",
+            "1528"
+        ]
+    },
+    {
+        "id_valid": "127",
+        "status": "done",
+        "final_ranking": [
+            "2867",
+            "2148",
+            "1352",
+            "2061",
+            "340"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "128",
+        "status": "done",
+        "final_ranking": [
+            "2008",
+            "2639",
+            "2494",
+            "985"
+        ],
+        "rejected": [
+            "1338"
+        ]
+    },
+    {
+        "id_valid": "129",
+        "status": "done",
+        "final_ranking": [
+            "2155",
+            "1995",
+            "2873",
+            "1340"
+        ],
+        "rejected": [
+            "689"
+        ]
+    },
+    {
+        "id_valid": "130",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "1346",
+            "1875",
+            "1151",
+            "1377",
+            "1845"
+        ]
+    },
+    {
+        "id_valid": "131",
+        "status": "done",
+        "final_ranking": [
+            "1134",
+            "1520"
+        ],
+        "rejected": [
+            "1520",
+            "1134",
+            "453",
+            "980",
+            "1465"
+        ]
+    },
+    {
+        "id_valid": "132",
+        "status": "done",
+        "final_ranking": [
+            "2760",
+            "2825",
+            "2622"
+        ],
+        "rejected": [
+            "1657",
+            "2725"
+        ]
+    },
+    {
+        "id_valid": "133",
+        "status": "done",
+        "final_ranking": [
+            "1804",
+            "913",
+            "400",
+            "1524",
+            "2751"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "134",
+        "status": "done",
+        "final_ranking": [
+            "2565",
+            "979",
+            "2653",
+            "1617"
+        ],
+        "rejected": [
+            "1442"
+        ]
+    },
+    {
+        "id_valid": "135",
+        "status": "done",
+        "final_ranking": [
+            "2152",
+            "2300",
+            "1675",
+            "1990"
+        ],
+        "rejected": [
+            "2347"
+        ]
+    },
+    {
+        "id_valid": "136",
+        "status": "done",
+        "final_ranking": [
+            "1409",
+            "338",
+            "757"
+        ],
+        "rejected": [
+            "406",
+            "2036"
+        ]
+    },
+    {
+        "id_valid": "137",
+        "status": "done",
+        "final_ranking": [
+            "1134",
+            "980"
+        ],
+        "rejected": [
+            "1520",
+            "453",
+            "1465"
+        ]
+    },
+    {
+        "id_valid": "138",
+        "status": "done",
+        "final_ranking": [
+            "500",
+            "1675"
+        ],
+        "rejected": [
+            "2040",
+            "2658",
+            "2467"
+        ]
+    },
+    {
+        "id_valid": "139",
+        "status": "done",
+        "final_ranking": [
+            "487",
+            "526",
+            "939",
+            "544",
+            "454"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "140",
+        "status": "done",
+        "final_ranking": [
+            "454",
+            "2178",
+            "485"
+        ],
+        "rejected": [
+            "487",
+            "667"
+        ]
+    },
+    {
+        "id_valid": "141",
+        "status": "done",
+        "final_ranking": [
+            "270",
+            "2260",
+            "2369"
+        ],
+        "rejected": [
+            "889",
+            "2188"
+        ]
+    },
+    {
+        "id_valid": "142",
+        "status": "done",
+        "final_ranking": [
+            "931",
+            "2217",
+            "278",
+            "2484"
+        ],
+        "rejected": [
+            "2225"
+        ]
+    },
+    {
+        "id_valid": "143",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "2702",
+            "2718",
+            "1513",
+            "1500"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "144",
+        "status": "done",
+        "final_ranking": [
+            "2556",
+            "92",
+            "789"
+        ],
+        "rejected": [
+            "669",
+            "1576"
+        ]
+    },
+    {
+        "id_valid": "145",
+        "status": "done",
+        "final_ranking": [
+            "1644",
+            "2010",
+            "567"
+        ],
+        "rejected": [
+            "2050",
+            "668"
+        ]
+    },
+    {
+        "id_valid": "146",
+        "status": "done",
+        "final_ranking": [
+            "442",
+            "1052",
+            "1114",
+            "1587"
+        ],
+        "rejected": [
+            "1473"
+        ]
+    },
+    {
+        "id_valid": "147",
+        "status": "done",
+        "final_ranking": [
+            "195",
+            "667",
+            "200",
+            "670"
+        ],
+        "rejected": [
+            "2500"
+        ]
+    },
+    {
+        "id_valid": "148",
+        "status": "done",
+        "final_ranking": [
+            "2491"
+        ],
+        "rejected": [
+            "2316",
+            "974",
+            "2375",
+            "1569"
+        ]
+    },
+    {
+        "id_valid": "149",
+        "status": "done",
+        "final_ranking": [
+            "243",
+            "1109",
+            "2847"
+        ],
+        "rejected": [
+            "1523",
+            "369"
+        ]
+    },
+    {
+        "id_valid": "150",
+        "status": "done",
+        "final_ranking": [
+            "13",
+            "1372",
+            "2775",
+            "454"
+        ],
+        "rejected": [
+            "1033"
+        ]
+    },
+    {
+        "id_valid": "151",
+        "status": "done",
+        "final_ranking": [
+            "1979",
+            "318",
+            "622",
+            "287"
+        ],
+        "rejected": [
+            "438"
+        ]
+    },
+    {
+        "id_valid": "152",
+        "status": "done",
+        "final_ranking": [
+            "2181",
+            "808",
+            "966",
+            "596"
+        ],
+        "rejected": [
+            "2624"
+        ]
+    },
+    {
+        "id_valid": "153",
+        "status": "done",
+        "final_ranking": [
+            "277"
+        ],
+        "rejected": [
+            "252",
+            "424",
+            "2085",
+            "1537"
+        ]
+    },
+    {
+        "id_valid": "154",
+        "status": "done",
+        "final_ranking": [
+            "2297",
+            "974",
+            "1653",
+            "2370",
+            "1197"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "155",
+        "status": "done",
+        "final_ranking": [
+            "130",
+            "215",
+            "330",
+            "2617"
+        ],
+        "rejected": [
+            "1138"
+        ]
+    },
+    {
+        "id_valid": "156",
+        "status": "done",
+        "final_ranking": [
+            "1450",
+            "2689",
+            "600",
+            "2045"
+        ],
+        "rejected": [
+            "1345"
+        ]
+    },
+    {
+        "id_valid": "157",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "229",
+            "1813",
+            "2837",
+            "268",
+            "2833"
+        ]
+    },
+    {
+        "id_valid": "158",
+        "status": "done",
+        "final_ranking": [
+            "669",
+            "685",
+            "92",
+            "1576",
+            "789"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "159",
+        "status": "done",
+        "final_ranking": [
+            "367",
+            "53",
+            "264"
+        ],
+        "rejected": [
+            "264",
+            "1268",
+            "53",
+            "129"
+        ]
+    },
+    {
+        "id_valid": "160",
+        "status": "done",
+        "final_ranking": [
+            "2333",
+            "404",
+            "1987",
+            "2189"
+        ],
+        "rejected": [
+            "2283"
+        ]
+    },
+    {
+        "id_valid": "161",
+        "status": "done",
+        "final_ranking": [
+            "1049",
+            "2388",
+            "408",
+            "1446"
+        ],
+        "rejected": [
+            "1390"
+        ]
+    },
+    {
+        "id_valid": "162",
+        "status": "done",
+        "final_ranking": [
+            "748",
+            "128",
+            "336"
+        ],
+        "rejected": [
+            "1617",
+            "1070"
+        ]
+    },
+    {
+        "id_valid": "163",
+        "status": "done",
+        "final_ranking": [
+            "2189"
+        ],
+        "rejected": [
+            "1987",
+            "404",
+            "2711",
+            "2333"
+        ]
+    },
+    {
+        "id_valid": "164",
+        "status": "done",
+        "final_ranking": [
+            "53",
+            "367"
+        ],
+        "rejected": [
+            "264",
+            "2457",
+            "129"
+        ]
+    },
+    {
+        "id_valid": "165",
+        "status": "done",
+        "final_ranking": [
+            "2604",
+            "207",
+            "499",
+            "2809"
+        ],
+        "rejected": [
+            "1155"
+        ]
+    },
+    {
+        "id_valid": "166",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "2267"
+        ]
+    },
+    {
+        "id_valid": "167",
+        "status": "done",
+        "final_ranking": [
+            "682",
+            "2290",
+            "2389",
+            "1118"
+        ],
+        "rejected": [
+            "971"
+        ]
+    },
+    {
+        "id_valid": "168",
+        "status": "done",
+        "final_ranking": [
+            "529",
+            "946",
+            "1336",
+            "2498",
+            "1901"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "169",
+        "status": "done",
+        "final_ranking": [
+            "1705",
+            "2578",
+            "2307",
+            "765",
+            "1006"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "170",
+        "status": "done",
+        "final_ranking": [
+            "2164",
+            "585",
+            "982",
+            "2058"
+        ],
+        "rejected": [
+            "164"
+        ]
+    },
+    {
+        "id_valid": "171",
+        "status": "done",
+        "final_ranking": [
+            "2772",
+            "1637",
+            "26",
+            "1822",
+            "2860"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "172",
+        "status": "done",
+        "final_ranking": [
+            "747",
+            "1720",
+            "1989",
+            "2618",
+            "691"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "173",
+        "status": "done",
+        "final_ranking": [
+            "657",
+            "1609",
+            "600"
+        ],
+        "rejected": [
+            "982",
+            "563"
+        ]
+    },
+    {
+        "id_valid": "174",
+        "status": "done",
+        "final_ranking": [
+            "2287",
+            "2628",
+            "1886",
+            "2398",
+            "1339"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "175",
+        "status": "done",
+        "final_ranking": [
+            "450",
+            "928",
+            "1970",
+            "654",
+            "597"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "176",
+        "status": "done",
+        "final_ranking": [
+            "985",
+            "2639",
+            "1078",
+            "500",
+            "2307"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "177",
+        "status": "done",
+        "final_ranking": [
+            "2555",
+            "2528",
+            "1418",
+            "1765",
+            "1856"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "178",
+        "status": "done",
+        "final_ranking": [
+            "1791",
+            "993",
+            "1627",
+            "583",
+            "2455"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "179",
+        "status": "done",
+        "final_ranking": [
+            "630",
+            "816",
+            "1295",
+            "594",
+            "826"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "180",
+        "status": "done",
+        "final_ranking": [
+            "1352",
+            "2061",
+            "2890",
+            "2867"
+        ],
+        "rejected": [
+            "340"
+        ]
+    },
+    {
+        "id_valid": "181",
+        "status": "done",
+        "final_ranking": [
+            "1066",
+            "817",
+            "569",
+            "731",
+            "652"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "182",
+        "status": "done",
+        "final_ranking": [
+            "748",
+            "1617",
+            "1638",
+            "2113",
+            "2279"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "183",
+        "status": "done",
+        "final_ranking": [
+            "784",
+            "1077",
+            "1067",
+            "74",
+            "202"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "184",
+        "status": "done",
+        "final_ranking": [
+            "318",
+            "1979",
+            "622",
+            "2293"
+        ],
+        "rejected": [
+            "438"
+        ]
+    },
+    {
+        "id_valid": "185",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": []
+    },
+    {
+        "id_valid": "186",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": []
+    },
+    {
+        "id_valid": "187",
+        "status": "done",
+        "final_ranking": [
+            "2867",
+            "340",
+            "2061",
+            "2148",
+            "137"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "188",
+        "status": "done",
+        "final_ranking": [
+            "747",
+            "1989",
+            "2598",
+            "1616"
+        ],
+        "rejected": [
+            "2684"
+        ]
+    },
+    {
+        "id_valid": "189",
+        "status": "done",
+        "final_ranking": [
+            "793",
+            "31",
+            "1553",
+            "1459",
+            "2164"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "190",
+        "status": "done",
+        "final_ranking": [
+            "817",
+            "645",
+            "668",
+            "2010"
+        ],
+        "rejected": [
+            "1644"
+        ]
+    },
+    {
+        "id_valid": "191",
+        "status": "done",
+        "final_ranking": [
+            "770",
+            "834",
+            "378",
+            "551"
+        ],
+        "rejected": [
+            "691"
+        ]
+    },
+    {
+        "id_valid": "192",
+        "status": "done",
+        "final_ranking": [
+            "1617",
+            "1528",
+            "1813"
+        ],
+        "rejected": [
+            "1209",
+            "2561"
+        ]
+    },
+    {
+        "id_valid": "193",
+        "status": "done",
+        "final_ranking": [
+            "1138",
+            "330",
+            "431"
+        ],
+        "rejected": [
+            "1686",
+            "914"
+        ]
+    },
+    {
+        "id_valid": "194",
+        "status": "done",
+        "final_ranking": [
+            "600",
+            "2357",
+            "1609",
+            "1792"
+        ],
+        "rejected": [
+            "1442"
+        ]
+    },
+    {
+        "id_valid": "195",
+        "status": "done",
+        "final_ranking": [
+            "41",
+            "101",
+            "2527",
+            "1216",
+            "2885"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "196",
+        "status": "done",
+        "final_ranking": [
+            "202",
+            "784",
+            "1067",
+            "1077",
+            "1298"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "197",
+        "status": "done",
+        "final_ranking": [
+            "200",
+            "195",
+            "2500",
+            "2091",
+            "1128"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "198",
+        "status": "done",
+        "final_ranking": [
+            "858",
+            "482",
+            "785",
+            "874",
+            "2611"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "199",
+        "status": "done",
+        "final_ranking": [
+            "299",
+            "2885",
+            "1533",
+            "705",
+            "1216"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "200",
+        "status": "done",
+        "final_ranking": [
+            "2164",
+            "2728",
+            "1609",
+            "1553"
+        ],
+        "rejected": [
+            "701"
+        ]
+    },
+    {
+        "id_valid": "201",
+        "status": "done",
+        "final_ranking": [
+            "2692"
+        ],
+        "rejected": [
+            "2291",
+            "2276"
+        ]
+    },
+    {
+        "id_valid": "202",
+        "status": "done",
+        "final_ranking": [
+            "627",
+            "331",
+            "2762",
+            "484"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "203",
+        "status": "done",
+        "final_ranking": [
+            "2372",
+            "658",
+            "692",
+            "2510",
+            "1612"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "204",
+        "status": "done",
+        "final_ranking": [
+            "2503",
+            "2627",
+            "2008",
+            "1436",
+            "2037"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "205",
+        "status": "done",
+        "final_ranking": [
+            "1438",
+            "340",
+            "924",
+            "726",
+            "2867"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "206",
+        "status": "done",
+        "final_ranking": [
+            "473",
+            "2697",
+            "1466",
+            "2722"
+        ],
+        "rejected": [
+            "1299"
+        ]
+    },
+    {
+        "id_valid": "207",
+        "status": "done",
+        "final_ranking": [
+            "1338",
+            "1613",
+            "985",
+            "2299",
+            "796"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "208",
+        "status": "done",
+        "final_ranking": [
+            "660",
+            "1318",
+            "814",
+            "392",
+            "2342"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "209",
+        "status": "done",
+        "final_ranking": [
+            "2245",
+            "170",
+            "1627",
+            "77",
+            "792"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "210",
+        "status": "done",
+        "final_ranking": [
+            "2334",
+            "79",
+            "735",
+            "23",
+            "377"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "211",
+        "status": "done",
+        "final_ranking": [
+            "1056",
+            "1546",
+            "2099",
+            "411",
+            "2587"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "212",
+        "status": "done",
+        "final_ranking": [
+            "985",
+            "500",
+            "1675",
+            "2343"
+        ],
+        "rejected": [
+            "2658"
+        ]
+    },
+    {
+        "id_valid": "213",
+        "status": "done",
+        "final_ranking": [
+            "2438",
+            "131",
+            "2600",
+            "2849",
+            "334"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "214",
+        "status": "done",
+        "final_ranking": [
+            "2247",
+            "2910",
+            "2210",
+            "713"
+        ],
+        "rejected": [
+            "1029"
+        ]
+    },
+    {
+        "id_valid": "215",
+        "status": "done",
+        "final_ranking": [
+            "329",
+            "365",
+            "2169",
+            "1019",
+            "2907"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "216",
+        "status": "done",
+        "final_ranking": [
+            "2225",
+            "2592",
+            "1644",
+            "1756",
+            "1981"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "217",
+        "status": "done",
+        "final_ranking": [
+            "1151",
+            "722",
+            "1875"
+        ],
+        "rejected": [
+            "1871",
+            "850"
+        ]
+    },
+    {
+        "id_valid": "218",
+        "status": "done",
+        "final_ranking": [
+            "2669",
+            "1952",
+            "2138",
+            "1171",
+            "1527"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "219",
+        "status": "done",
+        "final_ranking": [
+            "415",
+            "1985",
+            "953",
+            "958",
+            "382"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "220",
+        "status": "done",
+        "final_ranking": [
+            "1813",
+            "1447",
+            "1209",
+            "2289"
+        ],
+        "rejected": [
+            "1070"
+        ]
+    },
+    {
+        "id_valid": "221",
+        "status": "done",
+        "final_ranking": [
+            "1790",
+            "1001"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "222",
+        "status": "done",
+        "final_ranking": [
+            "209",
+            "128",
+            "310",
+            "1538",
+            "35"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "223",
+        "status": "done",
+        "final_ranking": [
+            "622",
+            "438"
+        ],
+        "rejected": [
+            "318",
+            "1979",
+            "2293"
+        ]
+    },
+    {
+        "id_valid": "224",
+        "status": "done",
+        "final_ranking": [
+            "1979",
+            "622",
+            "318",
+            "233"
+        ],
+        "rejected": [
+            "438"
+        ]
+    },
+    {
+        "id_valid": "225",
+        "status": "done",
+        "final_ranking": [
+            "762",
+            "128",
+            "360",
+            "1538",
+            "355"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "226",
+        "status": "done",
+        "final_ranking": [
+            "2225",
+            "1820",
+            "2592",
+            "817"
+        ],
+        "rejected": [
+            "645"
+        ]
+    },
+    {
+        "id_valid": "227",
+        "status": "done",
+        "final_ranking": [
+            "914",
+            "2510"
+        ],
+        "rejected": [
+            "658",
+            "2689",
+            "1612"
+        ]
+    },
+    {
+        "id_valid": "228",
+        "status": "done",
+        "final_ranking": [
+            "2839",
+            "793",
+            "573",
+            "1661",
+            "857"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "229",
+        "status": "done",
+        "final_ranking": [
+            "918",
+            "470",
+            "1436",
+            "1041"
+        ],
+        "rejected": [
+            "707"
+        ]
+    },
+    {
+        "id_valid": "230",
+        "status": "done",
+        "final_ranking": [
+            "2278",
+            "2875",
+            "915",
+            "1102",
+            "1436"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "231",
+        "status": "done",
+        "final_ranking": [
+            "793",
+            "1627",
+            "99",
+            "511",
+            "1553"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "232",
+        "status": "done",
+        "final_ranking": [
+            "946",
+            "529",
+            "1215",
+            "1446"
+        ],
+        "rejected": [
+            "1049"
+        ]
+    },
+    {
+        "id_valid": "233",
+        "status": "done",
+        "final_ranking": [
+            "1633",
+            "2191",
+            "1929",
+            "2421",
+            "752"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "234",
+        "status": "done",
+        "final_ranking": [
+            "1375",
+            "207",
+            "2532",
+            "2809",
+            "2355"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "235",
+        "status": "done",
+        "final_ranking": [
+            "561",
+            "736",
+            "771",
+            "634",
+            "1034"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "236",
+        "status": "done",
+        "final_ranking": [
+            "545",
+            "66",
+            "239",
+            "186"
+        ],
+        "rejected": [
+            "928"
+        ]
+    },
+    {
+        "id_valid": "237",
+        "status": "done",
+        "final_ranking": [
+            "2199",
+            "1335",
+            "1966",
+            "2261"
+        ],
+        "rejected": [
+            "1844"
+        ]
+    },
+    {
+        "id_valid": "238",
+        "status": "done",
+        "final_ranking": [
+            "2513",
+            "2340",
+            "2600",
+            "1854"
+        ],
+        "rejected": [
+            "667"
+        ]
+    },
+    {
+        "id_valid": "239",
+        "status": "done",
+        "final_ranking": [
+            "318",
+            "527",
+            "1979"
+        ],
+        "rejected": [
+            "438",
+            "287"
+        ]
+    },
+    {
+        "id_valid": "240",
+        "status": "done",
+        "final_ranking": [
+            "322",
+            "1013",
+            "1216",
+            "327",
+            "299"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "241",
+        "status": "done",
+        "final_ranking": [
+            "99",
+            "792",
+            "110",
+            "511",
+            "164"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "242",
+        "status": "done",
+        "final_ranking": [
+            "73",
+            "323"
+        ],
+        "rejected": [
+            "2333",
+            "1149",
+            "1998"
+        ]
+    },
+    {
+        "id_valid": "243",
+        "status": "done",
+        "final_ranking": [
+            "122",
+            "16",
+            "62",
+            "357",
+            "351"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "244",
+        "status": "done",
+        "final_ranking": [
+            "917",
+            "1997",
+            "2869",
+            "1357",
+            "1264"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "245",
+        "status": "done",
+        "final_ranking": [
+            "71",
+            "262",
+            "333",
+            "127",
+            "258"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "246",
+        "status": "done",
+        "final_ranking": [
+            "1211",
+            "1781",
+            "920"
+        ],
+        "rejected": [
+            "653",
+            "749"
+        ]
+    },
+    {
+        "id_valid": "247",
+        "status": "done",
+        "final_ranking": [
+            "59",
+            "47",
+            "49",
+            "167",
+            "462"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "248",
+        "status": "done",
+        "final_ranking": [
+            "908",
+            "2798",
+            "1055",
+            "1054",
+            "1210"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "249",
+        "status": "done",
+        "final_ranking": [
+            "127",
+            "48",
+            "339",
+            "155",
+            "304"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "250",
+        "status": "done",
+        "final_ranking": [
+            "577",
+            "1053",
+            "1548",
+            "606",
+            "621"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "251",
+        "status": "done",
+        "final_ranking": [
+            "73",
+            "323",
+            "1998"
+        ],
+        "rejected": [
+            "2333",
+            "2375"
+        ]
+    },
+    {
+        "id_valid": "252",
+        "status": "done",
+        "final_ranking": [
+            "159",
+            "164",
+            "78",
+            "99",
+            "792"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "253",
+        "status": "done",
+        "final_ranking": [
+            "334",
+            "1969",
+            "2401",
+            "540",
+            "2584"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "254",
+        "status": "done",
+        "final_ranking": [
+            "59",
+            "49",
+            "47",
+            "191",
+            "112"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "255",
+        "status": "done",
+        "final_ranking": [
+            "127",
+            "122",
+            "166",
+            "372",
+            "75"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "256",
+        "status": "done",
+        "final_ranking": [
+            "1067",
+            "784",
+            "1077",
+            "571",
+            "202"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "257",
+        "status": "done",
+        "final_ranking": [
+            "1297",
+            "1095",
+            "1716",
+            "74"
+        ],
+        "rejected": [
+            "2733"
+        ]
+    },
+    {
+        "id_valid": "258",
+        "status": "done",
+        "final_ranking": [
+            "914",
+            "2510",
+            "658",
+            "2873",
+            "104"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "259",
+        "status": "done",
+        "final_ranking": [
+            "1831",
+            "2218",
+            "2741",
+            "2511"
+        ],
+        "rejected": [
+            "2700"
+        ]
+    },
+    {
+        "id_valid": "260",
+        "status": "done",
+        "final_ranking": [
+            "1028",
+            "122",
+            "107",
+            "308",
+            "20"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "261",
+        "status": "done",
+        "final_ranking": [
+            "283",
+            "702",
+            "1471",
+            "364",
+            "2851"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "262",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "1337",
+            "2785",
+            "614",
+            "2513"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "263",
+        "status": "done",
+        "final_ranking": [
+            "2666",
+            "297",
+            "68"
+        ],
+        "rejected": [
+            "257",
+            "2010"
+        ]
+    },
+    {
+        "id_valid": "264",
+        "status": "done",
+        "final_ranking": [
+            "2061",
+            "2867",
+            "340",
+            "2148"
+        ],
+        "rejected": [
+            "137"
+        ]
+    },
+    {
+        "id_valid": "265",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "424",
+            "252",
+            "277",
+            "2085",
+            "1920"
+        ]
+    },
+    {
+        "id_valid": "266",
+        "status": "done",
+        "final_ranking": [
+            "1007",
+            "363",
+            "298",
+            "2500",
+            "667"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "267",
+        "status": "done",
+        "final_ranking": [
+            "127",
+            "262",
+            "71",
+            "166",
+            "258"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "268",
+        "status": "done",
+        "final_ranking": [
+            "140",
+            "2794"
+        ],
+        "rejected": [
+            "1891",
+            "2382",
+            "153"
+        ]
+    },
+    {
+        "id_valid": "269",
+        "status": "done",
+        "final_ranking": [
+            "39",
+            "79",
+            "377",
+            "735"
+        ],
+        "rejected": [
+            "2186"
+        ]
+    },
+    {
+        "id_valid": "270",
+        "status": "done",
+        "final_ranking": [
+            "2378",
+            "2708",
+            "309",
+            "769",
+            "2627"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "271",
+        "status": "done",
+        "final_ranking": [
+            "325",
+            "1566",
+            "1422"
+        ],
+        "rejected": [
+            "1430",
+            "1223"
+        ]
+    },
+    {
+        "id_valid": "272",
+        "status": "done",
+        "final_ranking": [
+            "1368",
+            "1839",
+            "1865",
+            "1078"
+        ],
+        "rejected": [
+            "350"
+        ]
+    },
+    {
+        "id_valid": "273",
+        "status": "done",
+        "final_ranking": [
+            "1380",
+            "804",
+            "1687",
+            "702"
+        ],
+        "rejected": [
+            "646"
+        ]
+    },
+    {
+        "id_valid": "274",
+        "status": "done",
+        "final_ranking": [
+            "15",
+            "760",
+            "487",
+            "2449",
+            "1544"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "275",
+        "status": "done",
+        "final_ranking": [
+            "162",
+            "861",
+            "1299",
+            "2697"
+        ],
+        "rejected": [
+            "893"
+        ]
+    },
+    {
+        "id_valid": "276",
+        "status": "done",
+        "final_ranking": [
+            "122",
+            "107",
+            "337",
+            "368"
+        ],
+        "rejected": [
+            "80"
+        ]
+    },
+    {
+        "id_valid": "277",
+        "status": "done",
+        "final_ranking": [
+            "305"
+        ],
+        "rejected": [
+            "347",
+            "405",
+            "2661",
+            "2370"
+        ]
+    },
+    {
+        "id_valid": "278",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "1216",
+            "143",
+            "799"
+        ],
+        "rejected": [
+            "322"
+        ]
+    },
+    {
+        "id_valid": "279",
+        "status": "done",
+        "final_ranking": [
+            "326",
+            "125",
+            "263",
+            "245",
+            "118"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "280",
+        "status": "done",
+        "final_ranking": [
+            "61",
+            "240",
+            "294",
+            "93"
+        ],
+        "rejected": [
+            "104"
+        ]
+    },
+    {
+        "id_valid": "281",
+        "status": "done",
+        "final_ranking": [
+            "522",
+            "1033",
+            "117",
+            "584"
+        ],
+        "rejected": [
+            "322"
+        ]
+    },
+    {
+        "id_valid": "282",
+        "status": "done",
+        "final_ranking": [
+            "17",
+            "48",
+            "127",
+            "155"
+        ],
+        "rejected": [
+            "122"
+        ]
+    },
+    {
+        "id_valid": "283",
+        "status": "done",
+        "final_ranking": [
+            "376",
+            "2392",
+            "2600",
+            "2238"
+        ],
+        "rejected": [
+            "651"
+        ]
+    },
+    {
+        "id_valid": "284",
+        "status": "done",
+        "final_ranking": [
+            "83",
+            "191"
+        ],
+        "rejected": [
+            "59",
+            "91",
+            "47"
+        ]
+    },
+    {
+        "id_valid": "285",
+        "status": "done",
+        "final_ranking": [
+            "1067",
+            "784",
+            "1077",
+            "202"
+        ],
+        "rejected": [
+            "2685"
+        ]
+    },
+    {
+        "id_valid": "286",
+        "status": "done",
+        "final_ranking": [
+            "850",
+            "388",
+            "781",
+            "547",
+            "483"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "287",
+        "status": "done",
+        "final_ranking": [
+            "109"
+        ],
+        "rejected": [
+            "747",
+            "447",
+            "1948",
+            "1989"
+        ]
+    },
+    {
+        "id_valid": "288",
+        "status": "done",
+        "final_ranking": [
+            "1346",
+            "781",
+            "1377",
+            "483"
+        ],
+        "rejected": [
+            "850"
+        ]
+    },
+    {
+        "id_valid": "289",
+        "status": "done",
+        "final_ranking": [
+            "1159",
+            "1362"
+        ],
+        "rejected": [
+            "550",
+            "480",
+            "2832"
+        ]
+    },
+    {
+        "id_valid": "290",
+        "status": "done",
+        "final_ranking": [
+            "702",
+            "364",
+            "2263",
+            "283"
+        ],
+        "rejected": [
+            "1483"
+        ]
+    },
+    {
+        "id_valid": "291",
+        "status": "done",
+        "final_ranking": [
+            "38",
+            "151",
+            "237",
+            "2824",
+            "220"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "292",
+        "status": "done",
+        "final_ranking": [
+            "2019",
+            "2661",
+            "741"
+        ],
+        "rejected": [
+            "2777",
+            "2540"
+        ]
+    },
+    {
+        "id_valid": "293",
+        "status": "done",
+        "final_ranking": [
+            "1346",
+            "207",
+            "499",
+            "341",
+            "703"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "294",
+        "status": "done",
+        "final_ranking": [
+            "150",
+            "115",
+            "372",
+            "1432",
+            "370"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "295",
+        "status": "done",
+        "final_ranking": [
+            "75",
+            "122",
+            "262",
+            "56",
+            "107"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "296",
+        "status": "done",
+        "final_ranking": [
+            "43",
+            "245",
+            "263"
+        ],
+        "rejected": [
+            "69",
+            "17"
+        ]
+    },
+    {
+        "id_valid": "297",
+        "status": "done",
+        "final_ranking": [
+            "28"
+        ],
+        "rejected": [
+            "141",
+            "103",
+            "2306",
+            "909"
+        ]
+    },
+    {
+        "id_valid": "298",
+        "status": "done",
+        "final_ranking": [
+            "1741",
+            "1488",
+            "815",
+            "1453",
+            "164"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "299",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "614",
+            "522",
+            "2718",
+            "799"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "300",
+        "status": "done",
+        "final_ranking": [
+            "486",
+            "1780",
+            "371",
+            "507",
+            "33"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "301",
+        "status": "done",
+        "final_ranking": [
+            "56",
+            "127",
+            "262",
+            "10",
+            "64"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "302",
+        "status": "done",
+        "final_ranking": [
+            "318",
+            "684"
+        ],
+        "rejected": [
+            "438",
+            "179",
+            "1979"
+        ]
+    },
+    {
+        "id_valid": "303",
+        "status": "done",
+        "final_ranking": [
+            "335",
+            "590",
+            "595",
+            "1838",
+            "2563"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "304",
+        "status": "done",
+        "final_ranking": [
+            "122",
+            "75",
+            "127",
+            "155",
+            "302"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "305",
+        "status": "done",
+        "final_ranking": [
+            "1357",
+            "917",
+            "1264",
+            "1354",
+            "1997"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "306",
+        "status": "done",
+        "final_ranking": [
+            "1030",
+            "2574",
+            "525",
+            "98"
+        ],
+        "rejected": [
+            "1030",
+            "1966"
+        ]
+    },
+    {
+        "id_valid": "307",
+        "status": "done",
+        "final_ranking": [
+            "217",
+            "830",
+            "1486"
+        ],
+        "rejected": [
+            "1049",
+            "529"
+        ]
+    },
+    {
+        "id_valid": "308",
+        "status": "done",
+        "final_ranking": [
+            "318",
+            "684",
+            "1979"
+        ],
+        "rejected": [
+            "438",
+            "179"
+        ]
+    },
+    {
+        "id_valid": "309",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "1638",
+            "178",
+            "2542",
+            "2279",
+            "1617"
+        ]
+    },
+    {
+        "id_valid": "310",
+        "status": "done",
+        "final_ranking": [
+            "2500",
+            "667",
+            "284",
+            "2827",
+            "637"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "311",
+        "status": "done",
+        "final_ranking": [
+            "996",
+            "505",
+            "2531",
+            "513"
+        ],
+        "rejected": [
+            "2280"
+        ]
+    },
+    {
+        "id_valid": "312",
+        "status": "done",
+        "final_ranking": [
+            "1138",
+            "1400"
+        ],
+        "rejected": [
+            "1138",
+            "431",
+            "1686",
+            "330"
+        ]
+    },
+    {
+        "id_valid": "313",
+        "status": "done",
+        "final_ranking": [
+            "1278",
+            "125",
+            "2180",
+            "147"
+        ],
+        "rejected": [
+            "120"
+        ]
+    },
+    {
+        "id_valid": "314",
+        "status": "done",
+        "final_ranking": [
+            "2904",
+            "2828",
+            "1688",
+            "954",
+            "1634"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "315",
+        "status": "done",
+        "final_ranking": [
+            "1301",
+            "1414",
+            "1631"
+        ],
+        "rejected": [
+            "1745",
+            "1581"
+        ]
+    },
+    {
+        "id_valid": "316",
+        "status": "done",
+        "final_ranking": [
+            "546",
+            "585",
+            "999",
+            "413",
+            "196"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "317",
+        "status": "done",
+        "final_ranking": [
+            "2832",
+            "480",
+            "2292",
+            "962"
+        ],
+        "rejected": [
+            "1362"
+        ]
+    },
+    {
+        "id_valid": "318",
+        "status": "done",
+        "final_ranking": [
+            "2031",
+            "1928"
+        ],
+        "rejected": [
+            "901",
+            "141",
+            "103"
+        ]
+    },
+    {
+        "id_valid": "319",
+        "status": "done",
+        "final_ranking": [
+            "697",
+            "745",
+            "1949"
+        ],
+        "rejected": [
+            "301",
+            "1111"
+        ]
+    },
+    {
+        "id_valid": "320",
+        "status": "done",
+        "final_ranking": [
+            "485",
+            "927",
+            "320",
+            "469"
+        ],
+        "rejected": [
+            "599"
+        ]
+    },
+    {
+        "id_valid": "321",
+        "status": "done",
+        "final_ranking": [
+            "181",
+            "736",
+            "222",
+            "114"
+        ],
+        "rejected": [
+            "671"
+        ]
+    },
+    {
+        "id_valid": "322",
+        "status": "done",
+        "final_ranking": [
+            "337",
+            "80",
+            "181",
+            "955"
+        ],
+        "rejected": [
+            "362"
+        ]
+    },
+    {
+        "id_valid": "323",
+        "status": "done",
+        "final_ranking": [
+            "48",
+            "127",
+            "374"
+        ],
+        "rejected": [
+            "166",
+            "337"
+        ]
+    },
+    {
+        "id_valid": "324",
+        "status": "done",
+        "final_ranking": [
+            "1875",
+            "1151",
+            "722"
+        ],
+        "rejected": [
+            "850",
+            "1451"
+        ]
+    },
+    {
+        "id_valid": "325",
+        "status": "done",
+        "final_ranking": [
+            "835",
+            "2107",
+            "305",
+            "2661",
+            "2461"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "326",
+        "status": "done",
+        "final_ranking": [
+            "382",
+            "953",
+            "415",
+            "1985"
+        ],
+        "rejected": [
+            "2297"
+        ]
+    },
+    {
+        "id_valid": "327",
+        "status": "done",
+        "final_ranking": [
+            "891",
+            "1438",
+            "2625",
+            "1005",
+            "641"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "328",
+        "status": "done",
+        "final_ranking": [
+            "784",
+            "571",
+            "1019",
+            "1077",
+            "138"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "329",
+        "status": "done",
+        "final_ranking": [
+            "1346",
+            "1377",
+            "847",
+            "1875"
+        ],
+        "rejected": [
+            "850"
+        ]
+    },
+    {
+        "id_valid": "330",
+        "status": "done",
+        "final_ranking": [
+            "1359"
+        ],
+        "rejected": [
+            "681",
+            "1688",
+            "443",
+            "1270"
+        ]
+    },
+    {
+        "id_valid": "331",
+        "status": "done",
+        "final_ranking": [
+            "1346",
+            "207",
+            "1875",
+            "1377"
+        ],
+        "rejected": [
+            "781"
+        ]
+    },
+    {
+        "id_valid": "332",
+        "status": "done",
+        "final_ranking": [
+            "181",
+            "249",
+            "114",
+            "150",
+            "337"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "333",
+        "status": "done",
+        "final_ranking": [
+            "1093",
+            "1058",
+            "57",
+            "1278",
+            "1678"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "334",
+        "status": "done",
+        "final_ranking": [
+            "653"
+        ],
+        "rejected": [
+            "1405",
+            "1428",
+            "191",
+            "171"
+        ]
+    },
+    {
+        "id_valid": "335",
+        "status": "done",
+        "final_ranking": [
+            "452",
+            "1286",
+            "2209",
+            "1405",
+            "1576"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "336",
+        "status": "done",
+        "final_ranking": [
+            "372",
+            "339",
+            "1080",
+            "304"
+        ],
+        "rejected": [
+            "297"
+        ]
+    },
+    {
+        "id_valid": "337",
+        "status": "done",
+        "final_ranking": [
+            "702",
+            "1471",
+            "217",
+            "2263"
+        ],
+        "rejected": [
+            "364"
+        ]
+    },
+    {
+        "id_valid": "338",
+        "status": "done",
+        "final_ranking": [
+            "34",
+            "304",
+            "2010",
+            "1143",
+            "2229"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "339",
+        "status": "done",
+        "final_ranking": [
+            "118",
+            "263",
+            "292",
+            "747",
+            "1989"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "340",
+        "status": "done",
+        "final_ranking": [
+            "1055",
+            "969",
+            "2313",
+            "491",
+            "2798"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "341",
+        "status": "done",
+        "final_ranking": [
+            "1597",
+            "2342",
+            "1315",
+            "1392"
+        ],
+        "rejected": [
+            "2417"
+        ]
+    },
+    {
+        "id_valid": "342",
+        "status": "done",
+        "final_ranking": [
+            "40",
+            "456",
+            "1366",
+            "2197"
+        ],
+        "rejected": [
+            "2251"
+        ]
+    },
+    {
+        "id_valid": "343",
+        "status": "done",
+        "final_ranking": [
+            "162",
+            "893"
+        ],
+        "rejected": [
+            "473",
+            "25",
+            "2853"
+        ]
+    },
+    {
+        "id_valid": "344",
+        "status": "done",
+        "final_ranking": [
+            "2482",
+            "673",
+            "371",
+            "33"
+        ],
+        "rejected": [
+            "2616"
+        ]
+    },
+    {
+        "id_valid": "345",
+        "status": "done",
+        "final_ranking": [
+            "367"
+        ],
+        "rejected": [
+            "264",
+            "129",
+            "53",
+            "2034"
+        ]
+    },
+    {
+        "id_valid": "346",
+        "status": "done",
+        "final_ranking": [
+            "705",
+            "1533",
+            "299",
+            "2885",
+            "306"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "347",
+        "status": "done",
+        "final_ranking": [
+            "562",
+            "1413",
+            "2855",
+            "66",
+            "931"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "348",
+        "status": "done",
+        "final_ranking": [
+            "2756",
+            "370",
+            "34",
+            "166",
+            "5"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "349",
+        "status": "done",
+        "final_ranking": [
+            "1979",
+            "179"
+        ],
+        "rejected": [
+            "622",
+            "438",
+            "318"
+        ]
+    },
+    {
+        "id_valid": "350",
+        "status": "done",
+        "final_ranking": [
+            "1991",
+            "2374"
+        ],
+        "rejected": [
+            "2048",
+            "905",
+            "856"
+        ]
+    },
+    {
+        "id_valid": "351",
+        "status": "done",
+        "final_ranking": [
+            "1347",
+            "2218",
+            "1831",
+            "2700",
+            "2511"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "352",
+        "status": "done",
+        "final_ranking": [
+            "127",
+            "71",
+            "262",
+            "333",
+            "10"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "353",
+        "status": "done",
+        "final_ranking": [
+            "487",
+            "2802",
+            "939",
+            "544",
+            "661"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "354",
+        "status": "done",
+        "final_ranking": [
+            "1892",
+            "743"
+        ],
+        "rejected": [
+            "178",
+            "94",
+            "1385"
+        ]
+    },
+    {
+        "id_valid": "355",
+        "status": "done",
+        "final_ranking": [
+            "442",
+            "1259",
+            "75",
+            "155"
+        ],
+        "rejected": [
+            "1473"
+        ]
+    },
+    {
+        "id_valid": "356",
+        "status": "done",
+        "final_ranking": [
+            "2438",
+            "2500",
+            "284",
+            "363",
+            "2660"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "357",
+        "status": "done",
+        "final_ranking": [
+            "442",
+            "75",
+            "324",
+            "115",
+            "302"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "358",
+        "status": "done",
+        "final_ranking": [
+            "162",
+            "394"
+        ],
+        "rejected": [
+            "25",
+            "2853",
+            "473"
+        ]
+    },
+    {
+        "id_valid": "359",
+        "status": "done",
+        "final_ranking": [
+            "2799",
+            "2128",
+            "2873",
+            "658"
+        ],
+        "rejected": [
+            "1094"
+        ]
+    },
+    {
+        "id_valid": "360",
+        "status": "done",
+        "final_ranking": [
+            "75",
+            "127",
+            "122",
+            "302"
+        ],
+        "rejected": [
+            "155"
+        ]
+    },
+    {
+        "id_valid": "361",
+        "status": "done",
+        "final_ranking": [
+            "962",
+            "496",
+            "2832",
+            "480",
+            "76"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "362",
+        "status": "done",
+        "final_ranking": [
+            "1149",
+            "2214"
+        ],
+        "rejected": [
+            "1195",
+            "404",
+            "2008"
+        ]
+    },
+    {
+        "id_valid": "363",
+        "status": "done",
+        "final_ranking": [
+            "48",
+            "17",
+            "43"
+        ],
+        "rejected": [
+            "69",
+            "707"
+        ]
+    },
+    {
+        "id_valid": "364",
+        "status": "done",
+        "final_ranking": [
+            "57",
+            "1058",
+            "1093",
+            "319",
+            "147"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "365",
+        "status": "done",
+        "final_ranking": [
+            "297",
+            "257",
+            "333",
+            "817"
+        ],
+        "rejected": [
+            "579"
+        ]
+    },
+    {
+        "id_valid": "366",
+        "status": "done",
+        "final_ranking": [
+            "294",
+            "240",
+            "104",
+            "353",
+            "61"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "367",
+        "status": "done",
+        "final_ranking": [
+            "297",
+            "257",
+            "68"
+        ],
+        "rejected": [
+            "2632",
+            "664"
+        ]
+    },
+    {
+        "id_valid": "368",
+        "status": "done",
+        "final_ranking": [
+            "656",
+            "60"
+        ],
+        "rejected": [
+            "191",
+            "653",
+            "2908"
+        ]
+    },
+    {
+        "id_valid": "369",
+        "status": "done",
+        "final_ranking": [
+            "266",
+            "155",
+            "357",
+            "2130"
+        ],
+        "rejected": [
+            "62"
+        ]
+    },
+    {
+        "id_valid": "370",
+        "status": "done",
+        "final_ranking": [
+            "999",
+            "332",
+            "585",
+            "110",
+            "413"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "371",
+        "status": "done",
+        "final_ranking": [
+            "69"
+        ],
+        "rejected": [
+            "43",
+            "17",
+            "56",
+            "75"
+        ]
+    },
+    {
+        "id_valid": "372",
+        "status": "done",
+        "final_ranking": [
+            "1558",
+            "312",
+            "2318",
+            "313"
+        ],
+        "rejected": [
+            "909"
+        ]
+    },
+    {
+        "id_valid": "373",
+        "status": "done",
+        "final_ranking": [
+            "960",
+            "1095",
+            "1297",
+            "1716",
+            "1755"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "374",
+        "status": "done",
+        "final_ranking": [
+            "1159",
+            "1362"
+        ],
+        "rejected": [
+            "2832",
+            "480",
+            "2292"
+        ]
+    },
+    {
+        "id_valid": "375",
+        "status": "done",
+        "final_ranking": [
+            "2161",
+            "437",
+            "2006"
+        ],
+        "rejected": [
+            "901",
+            "1404"
+        ]
+    },
+    {
+        "id_valid": "376",
+        "status": "done",
+        "final_ranking": [
+            "438",
+            "622"
+        ],
+        "rejected": [
+            "318",
+            "1979",
+            "684"
+        ]
+    },
+    {
+        "id_valid": "377",
+        "status": "done",
+        "final_ranking": [
+            "1544",
+            "1857",
+            "487",
+            "485"
+        ],
+        "rejected": [
+            "2606"
+        ]
+    },
+    {
+        "id_valid": "378",
+        "status": "done",
+        "final_ranking": [
+            "181",
+            "114",
+            "671",
+            "122",
+            "150"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "379",
+        "status": "done",
+        "final_ranking": [
+            "66",
+            "597",
+            "450"
+        ],
+        "rejected": [
+            "1970",
+            "931"
+        ]
+    },
+    {
+        "id_valid": "380",
+        "status": "done",
+        "final_ranking": [
+            "702",
+            "2263",
+            "364",
+            "529",
+            "283"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "381",
+        "status": "done",
+        "final_ranking": [
+            "188",
+            "73",
+            "125"
+        ],
+        "rejected": [
+            "323",
+            "2335"
+        ]
+    },
+    {
+        "id_valid": "382",
+        "status": "done",
+        "final_ranking": [
+            "75",
+            "155",
+            "166",
+            "122",
+            "302"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "383",
+        "status": "done",
+        "final_ranking": [
+            "2692"
+        ],
+        "rejected": [
+            "2276",
+            "2291"
+        ]
+    },
+    {
+        "id_valid": "384",
+        "status": "done",
+        "final_ranking": [
+            "122",
+            "308",
+            "20",
+            "311",
+            "107"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "385",
+        "status": "done",
+        "final_ranking": [
+            "558",
+            "169",
+            "2857",
+            "811"
+        ],
+        "rejected": [
+            "2323"
+        ]
+    },
+    {
+        "id_valid": "386",
+        "status": "done",
+        "final_ranking": [
+            "75",
+            "62",
+            "357",
+            "122",
+            "16"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "387",
+        "status": "done",
+        "final_ranking": [
+            "1362",
+            "1159"
+        ],
+        "rejected": [
+            "2292",
+            "2832",
+            "2550"
+        ]
+    },
+    {
+        "id_valid": "388",
+        "status": "done",
+        "final_ranking": [
+            "450",
+            "597",
+            "2543",
+            "1970",
+            "928"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "389",
+        "status": "done",
+        "final_ranking": [
+            "78",
+            "50",
+            "479",
+            "164",
+            "99"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "390",
+        "status": "done",
+        "final_ranking": [
+            "71",
+            "262",
+            "333",
+            "258",
+            "257"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "391",
+        "status": "done",
+        "final_ranking": [
+            "40",
+            "2197"
+        ],
+        "rejected": [
+            "2251",
+            "456",
+            "2479"
+        ]
+    },
+    {
+        "id_valid": "392",
+        "status": "done",
+        "final_ranking": [],
+        "rejected": [
+            "379",
+            "426",
+            "2546",
+            "2175",
+            "1415"
+        ]
+    },
+    {
+        "id_valid": "393",
+        "status": "done",
+        "final_ranking": [
+            "43",
+            "69",
+            "337",
+            "339",
+            "80"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "394",
+        "status": "done",
+        "final_ranking": [
+            "1338",
+            "2299",
+            "1675",
+            "1461"
+        ],
+        "rejected": [
+            "2343"
+        ]
+    },
+    {
+        "id_valid": "395",
+        "status": "done",
+        "final_ranking": [
+            "653",
+            "516",
+            "989"
+        ],
+        "rejected": [
+            "466",
+            "2908"
+        ]
+    },
+    {
+        "id_valid": "396",
+        "status": "done",
+        "final_ranking": [
+            "1920",
+            "1537"
+        ],
+        "rejected": [
+            "252",
+            "424",
+            "2085"
+        ]
+    },
+    {
+        "id_valid": "397",
+        "status": "done",
+        "final_ranking": [
+            "442",
+            "1473",
+            "1259",
+            "65",
+            "75"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "398",
+        "status": "done",
+        "final_ranking": [
+            "850",
+            "388",
+            "781"
+        ],
+        "rejected": [
+            "1151",
+            "1875"
+        ]
+    },
+    {
+        "id_valid": "399",
+        "status": "done",
+        "final_ranking": [
+            "1755",
+            "610",
+            "1298"
+        ],
+        "rejected": [
+            "555",
+            "1923"
+        ]
+    },
+    {
+        "id_valid": "400",
+        "status": "done",
+        "final_ranking": [
+            "49",
+            "1286"
+        ],
+        "rejected": [
+            "59",
+            "47",
+            "758"
+        ]
+    },
+    {
+        "id_valid": "401",
+        "status": "done",
+        "final_ranking": [
+            "1966",
+            "1030",
+            "98",
+            "525"
+        ],
+        "rejected": [
+            "1000"
+        ]
+    },
+    {
+        "id_valid": "402",
+        "status": "done",
+        "final_ranking": [
+            "1860",
+            "1298",
+            "555"
+        ],
+        "rejected": [
+            "610",
+            "1326"
+        ]
+    },
+    {
+        "id_valid": "403",
+        "status": "done",
+        "final_ranking": [
+            "98",
+            "2773",
+            "1966"
+        ],
+        "rejected": [
+            "525",
+            "1030"
+        ]
+    },
+    {
+        "id_valid": "404",
+        "status": "done",
+        "final_ranking": [
+            "1487",
+            "2820",
+            "322",
+            "1216",
+            "1707"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "405",
+        "status": "done",
+        "final_ranking": [
+            "28",
+            "2066",
+            "521"
+        ],
+        "rejected": [
+            "1073",
+            "909"
+        ]
+    },
+    {
+        "id_valid": "406",
+        "status": "done",
+        "final_ranking": [
+            "48",
+            "43",
+            "90",
+            "17",
+            "69"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "407",
+        "status": "done",
+        "final_ranking": [
+            "69",
+            "43",
+            "339",
+            "17",
+            "304"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "408",
+        "status": "done",
+        "final_ranking": [
+            "1250",
+            "506",
+            "886"
+        ],
+        "rejected": [
+            "787",
+            "997"
+        ]
+    },
+    {
+        "id_valid": "409",
+        "status": "done",
+        "final_ranking": [
+            "546",
+            "573",
+            "585",
+            "792",
+            "164"
+        ],
+        "rejected": []
+    },
+    {
+        "id_valid": "410",
+        "status": "done",
+        "final_ranking": [
+            "2392",
+            "376",
+            "2238",
+            "2600",
+            "44"
+        ],
+        "rejected": []
+    }
+]

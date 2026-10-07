@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv_*/
+
+# Downloaded and generated datasets; data/foulret remains tracked
+data/mvfouls/
+data/mvfouls_window/
+
+# Generated model artifacts
+retrieval/indexes/
+retrieval/**/query_emb_*.npz
+finetuning_outputs/
+slurm_outputs/
+
+# Local diagnostics
+dcgm/
+*.log
+.DS_Store

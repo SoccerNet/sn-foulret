@@ -1,0 +1,1808 @@
+{
+    "action_101": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_231": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_2": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_104": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_256": {
+        "What card would you give? Why?": "No card, as the defender only tripped the attacker with low intensity.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_276": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_284": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_159": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_105": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_272": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_35": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_121": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_280": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_15": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_32": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball on the thigh."
+    },
+    "action_31": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_238": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_275": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_138": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_116": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_164": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_215": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_261": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_281": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_211": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_156": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_169": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_64": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_296": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_219": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_53": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_34": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_228": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_197": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_168": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_194": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_198": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_274": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_154": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_68": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_242": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_214": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_124": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_165": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_279": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_139": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_277": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_141": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_44": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_146": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_162": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_248": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_12": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_271": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_137": {
+        "What card would you give? Why?": "No card, as the defender only slightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball on the thigh."
+    },
+    "action_185": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_220": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_170": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_117": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_103": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_69": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_84": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_144": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_140": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_80": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_293": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_128": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_294": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_62": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_16": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_236": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_7": {
+        "What card would you give? Why?": "No card, as the attacker accidentally tripped the defender with low intensity.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_36": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_157": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_19": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_174": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_41": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_122": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_163": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_247": {
+        "What card would you give? Why?": "No card, as the attacker accidentally tripped the defender with low intensity.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_66": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_171": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_37": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_118": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_243": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_17": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_82": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_266": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_77": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_6": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_227": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_200": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_61": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_288": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_254": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_120": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_4": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_27": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_130": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_98": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_52": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_183": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_265": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_260": {
+        "What card would you give? Why?": "No card, as the defender only lightly pushed the attacker in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_39": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_5": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_114": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_38": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_74": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_190": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_208": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_224": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_289": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_188": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_47": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_258": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_119": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_50": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_218": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_245": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_244": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_73": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball on the thigh."
+    },
+    "action_9": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_204": {
+        "What card would you give? Why?": "No card, as the defender only slightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_107": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_299": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_125": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_210": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_268": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_42": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_49": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_56": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_175": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_239": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_115": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_20": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_209": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_100": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_253": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_167": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_60": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_18": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_58": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_78": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_70": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_201": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_28": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_300": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_71": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_234": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_184": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_136": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_142": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_235": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_54": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_249": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_229": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_199": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_222": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_153": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_43": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_148": {
+        "What card would you give? Why?": "No card, as the defender only slightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_99": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_30": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_173": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_10": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_129": {
+        "What card would you give? Why?": "No card, as the defender only tripped the attacker with low intensity.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_269": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_267": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_22": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_283": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_259": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_55": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_292": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_192": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_106": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_123": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_195": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_286": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_51": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_240": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_172": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_295": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_25": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_191": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_149": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_151": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_133": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_110": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_187": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_246": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_226": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_94": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_24": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_278": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_150": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_33": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_263": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_57": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_225": {
+        "What card would you give? Why?": "No card, as the defender only slightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_85": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_59": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_213": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_181": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_177": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_212": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_86": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_131": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_102": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_76": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_250": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_152": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_96": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_147": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_221": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_111": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_290": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_67": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_216": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_166": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_63": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_93": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_108": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_285": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_83": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_273": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_161": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_203": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_176": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_89": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_287": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_26": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_87": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_237": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_145": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_92": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the side of the field, in the middle of the field."
+    },
+    "action_178": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_160": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_97": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_126": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_113": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_255": {
+        "What card would you give? Why?": "No card, as the attacker accidentally tripped the defender with low intensity.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_270": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_11": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_65": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_182": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_179": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_79": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_298": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_282": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_90": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_23": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_180": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_0": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_196": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_291": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_233": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_230": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_21": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_205": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_262": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_14": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_232": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_95": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_241": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_1": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_127": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_264": {
+        "What card would you give? Why?": "The defender makes contact with his opponent with low intensity in the battle for the ball at the foot. Since the intensity was low, there was no intention to harm the opponent, the risk of injury for the fouled player was low, and he tried to play the ball, no card is the right decision.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_88": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_45": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_158": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_40": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_251": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker's foot with their shin.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_217": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_193": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_132": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_257": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_8": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_297": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_13": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_91": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_29": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_134": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_189": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_75": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_143": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_46": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_223": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_3": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_186": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_135": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_72": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_252": {
+        "What card would you give? Why?": "No card, as the defender only lightly hits the attacker on the foot.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_206": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_48": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_202": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_109": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    },
+    "action_112": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_81": {
+        "What card would you give? Why?": "No card, as the defender pushed the attacker from behind with low intensity in the back without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_207": {
+        "What card would you give? Why?": "No card, as the defender only slightly tripped the attacker's leg without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The defender makes contact with the attacker with low intensity in the battle for the ball at the foot."
+    },
+    "action_155": {
+        "What card would you give? Why?": "No card, as the attacker pushed the defender in the back with low intensity without any risk of injury.",
+        "Did the defender touch the ball?": "Yes, the defender touched the ball.",
+        "Did the defender intend to play the ball?": "Yes, the defender intended to play the ball.",
+        "Where was the point of contact?": "The point of contact was on the foot."
+    }
+}

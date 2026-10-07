@@ -1,0 +1,6 @@
+[submodule "Clones/InternVideo"]
+	path = Clones/InternVideo
+	url = https://github.com/OpenGVLab/InternVideo.git
+[submodule "Clones/VLM2Vec"]
+	path = Clones/VLM2Vec
+	url = https://github.com/TIGER-AI-Lab/VLM2Vec.git
