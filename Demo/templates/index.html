@@ -23,7 +23,7 @@
             background: #fff;
             font: 15px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
-        button, textarea, input { font: inherit; }
+        button, input { font: inherit; }
         .shell { min-height: 100vh; display: grid; grid-template-columns: 320px minmax(0, 1fr); }
         .sidebar {
             padding: 28px 22px;
@@ -72,16 +72,6 @@
         .upload input { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; }
         .upload strong { display: block; margin-bottom: 4px; color: var(--green); }
         .filename { margin-top: 8px; color: var(--green-dark); font-size: 12px; word-break: break-all; }
-        textarea {
-            width: 100%;
-            min-height: 104px;
-            padding: 10px 12px;
-            resize: vertical;
-            border: 1px solid #bdc9c1;
-            border-radius: 9px;
-            background: white;
-        }
-        textarea:focus { outline: 3px solid #d7eee1; border-color: var(--green); }
         .button {
             width: 100%;
             margin-top: 10px;
@@ -128,13 +118,6 @@
             border-bottom: 1px solid var(--line);
         }
         .query h2, .matches-title { margin: 0 0 14px; font-size: 22px; }
-        .query-copy {
-            max-width: 680px;
-            padding: 15px 18px;
-            border-left: 4px solid var(--green);
-            border-radius: 6px;
-            background: #edf6f0;
-        }
         .query video { width: min(520px, 100%); border-radius: 12px; background: #101010; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
         .card {
@@ -211,19 +194,6 @@
         </section>
 
         <section class="section">
-            <h2>Search with a description</h2>
-            {% if supports_text %}
-            <p>Describe the action and referee decision.</p>
-            <form id="text-form">
-                <textarea id="text-query" placeholder="A reckless sliding tackle from behind…" required></textarea>
-                <button class="button" type="submit">Search description</button>
-            </form>
-            {% else %}
-            <p class="notice">This model is video-to-video only. Choose a Qwen3-VL model to enable text search.</p>
-            {% endif %}
-        </section>
-
-        <section class="section">
             <button class="button secondary" id="reset" type="button">Start a new search</button>
         </section>
     </aside>
@@ -234,8 +204,8 @@
             <span class="eyebrow">Semantic foul retrieval</span>
             <h1>Find the closest on-field precedents.</h1>
             <p class="lede">
-                Upload an incident or describe one to retrieve visually and semantically
-                similar fouls from the SoccerNet-MVFoul Train gallery.
+                Upload an incident to retrieve visually and semantically similar fouls
+                from the SoccerNet-MVFoul Train gallery.
             </p>
             <div class="stats">
                 <div class="stat"><strong>{{ total_indexed }}</strong><span>gallery actions indexed</span></div>
@@ -268,8 +238,6 @@
     const errorBox = document.getElementById("error");
     const videoInput = document.getElementById("video-input");
     const filename = document.getElementById("filename");
-    const textForm = document.getElementById("text-form");
-    const textQuery = document.getElementById("text-query");
 
     const escapeHtml = (value) => {
         const node = document.createElement("div");
@@ -303,10 +271,6 @@
     function showResults() {
         landing.style.display = "none";
         results.style.display = "block";
-    }
-
-    function renderTextQuery(text) {
-        queryView.innerHTML = "<div class=\"query-copy\">💬 " + escapeHtml(text) + "</div>";
     }
 
     function renderVideoQuery(url) {
@@ -344,31 +308,6 @@
         }).join("");
     }
 
-    if (textForm) {
-        textForm.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const query = textQuery.value.trim();
-            if (!query) return;
-            clearError();
-            setWorking(true, "Embedding your description and searching…");
-            try {
-                const response = await fetch("/api/search_text", {
-                    method: "POST",
-                    headers: {"Content-Type": "application/json"},
-                    body: JSON.stringify({query}),
-                });
-                const data = await readResponse(response);
-                renderTextQuery(query);
-                renderResults(data.results);
-                showResults();
-            } catch (error) {
-                showError(error.message);
-            } finally {
-                setWorking(false);
-            }
-        });
-    }
-
     videoInput.addEventListener("change", async () => {
         const file = videoInput.files[0];
         if (!file) return;
@@ -394,7 +333,6 @@
         clearError();
         videoInput.value = "";
         filename.textContent = "";
-        if (textQuery) textQuery.value = "";
         queryView.innerHTML = "";
         grid.innerHTML = "";
         landing.style.display = "block";

@@ -555,7 +555,7 @@ class Qwen3VLLabelTrainer:
         for epoch in range(1, self.args.epochs + 1):
             train_loss = self.run_epoch(train_loader, training=True)
             if self.args.max_dev_batches:
-                # Keep profiling/smoke jobs bounded. Full runs always use the
+                # Keep profiling jobs bounded. Full runs always use the
                 # deterministic complete Train-dev retrieval pool below.
                 dev_loss = self.run_epoch(dev_loader, training=False)
                 dev_metrics = {}
@@ -623,9 +623,9 @@ def parse_args():
                         choices=["sdpa", "flash_attention_2", "eager"])
     parser.add_argument("--gradient_checkpointing", action="store_true")
     parser.add_argument("--max_train_batches", type=int, default=None,
-                        help="Bound each train epoch for profiling/smoke tests")
+                        help="Bound each train epoch for profiling")
     parser.add_argument("--max_dev_batches", type=int, default=None,
-                        help="Bound each development epoch for profiling/smoke tests")
+                        help="Bound each development epoch for profiling")
     parser.add_argument("--dev_retrieval_k", type=int, default=10,
                         help="Train-dev full-pool mAP cutoff used for checkpoint selection")
     parser.add_argument("--data_only", action="store_true",

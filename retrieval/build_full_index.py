@@ -67,8 +67,6 @@ def main():
     parser.add_argument("--lora_path", default=None,
                         help="LoRA adapter directory for a fine-tuned Qwen model")
     parser.add_argument("--force_rebuild", action="store_true")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="Index only the first N corpus actions (smoke testing)")
     args = parser.parse_args()
 
     # Derive the index dir from the model key unless given explicitly, so different
@@ -88,9 +86,6 @@ def main():
 
     entries = gather_video_actions(data_dir, args.split)
     print(f"Found {len(entries)} {args.split} action folders with clips in {data_dir}")
-    if args.limit is not None:
-        entries = entries[:args.limit]
-        print(f"--limit {args.limit}: indexing only {len(entries)} actions (smoke test)")
     if not entries:
         raise SystemExit("No video actions found — check --data_dir.")
 

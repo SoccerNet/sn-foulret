@@ -139,7 +139,7 @@ class LamRAEmbeddingModel(BaseEmbeddingModel):
         except ImportError as e:
             raise ImportError(
                 f"Could not import LamRA / Qwen2-VL from {_VLM2VEC_ROOT}. Ensure the vlm2vec "
-                f"venv (.venv_vlm2vec) deps are installed and Clones/VLM2Vec exists."
+                f"foulret-vlm2vec environment dependencies are installed and Clones/VLM2Vec exists."
             ) from e
 
         self._process_vision_info = process_vision_info

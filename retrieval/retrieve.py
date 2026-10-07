@@ -76,7 +76,6 @@ def main():
                     help="Do not save query embeddings (used by instruction-ablation runs)")
     ap.add_argument("--plain_filenames", action="store_true",
                     help="Write <split>.json instead of <split>_<view>.json; requires one view")
-    ap.add_argument("--limit", type=int, default=None, help="First N queries per split (smoke/gate)")
     args = ap.parse_args()
 
     # Preserve the requested order while ignoring accidental duplicate view names.
@@ -130,8 +129,6 @@ def main():
 
     for split in args.splits:
         query_ids = list_query_ids(data_dir, split)
-        if args.limit is not None:
-            query_ids = query_ids[:args.limit]
         preds = {v: {} for v in selected_views}
         cache_ids, cache_vecs = [], []
         print(f"[{split}] {len(query_ids)} queries")

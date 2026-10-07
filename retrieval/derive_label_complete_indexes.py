@@ -12,7 +12,7 @@ Given a base index dir  retrieval/indexes/<model>/  writes:
 Each output dir mirrors the source layout (embeddings_train.json + faiss_index_train.bin)
 so the retrieval runner reads them with no code change. CPU-only, seconds per model.
 
-Run from repo root (venv with faiss active):
+Run from the repository root with the model's Conda environment active:
     python -m retrieval.derive_label_complete_indexes \
         --index_dir retrieval/indexes/qwen3vl-2b
 """

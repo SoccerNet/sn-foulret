@@ -9,15 +9,9 @@ class FakeIndex:
     ntotal = 1
 
 
-class FakeModel:
-    def embed_text(self, text, is_query=True):
-        return {"text": text, "is_query": is_query}
-
-
 class FakeEngine:
     def __init__(self):
         self.index = FakeIndex()
-        self.model = FakeModel()
 
     @staticmethod
     def _result():
@@ -27,11 +21,6 @@ class FakeEngine:
             "action_id": "Train_action_7",
             "score": 0.875,
         }
-
-    def search(self, query_embedding, top_k=5):
-        assert query_embedding["is_query"]
-        assert top_k == 5
-        return [self._result()]
 
     def search_by_video(self, action_dir, top_k=5):
         assert (Path(action_dir) / "clip_0.mp4").read_bytes() == b"query-video"
@@ -75,19 +64,17 @@ def test_landing_and_health(tmp_path):
     assert page.status_code == 200
     assert b"SoccerNet-FoulRet" in page.data
     assert b"Qwen3-VL-Embedding 2B" in page.data
-    assert client.get("/health").get_json()["ready"] is True
+    assert b"Search with a description" not in page.data
+    assert client.post("/api/search_text", json={"query": "tackle"}).status_code == 404
+    health = client.get("/health").get_json()
+    assert health["ready"] is True
+    assert health["stage"] == "Ready"
+    assert health["step"] == health["total_steps"] == 3
+    assert isinstance(health["elapsed_seconds"], int)
 
 
-def test_text_and_video_search(tmp_path):
+def test_video_search(tmp_path):
     client = _make_app(tmp_path).test_client()
-
-    text_response = client.post("/api/search_text", json={"query": "sliding tackle"})
-    assert text_response.status_code == 200
-    result = text_response.get_json()["results"][0]
-    assert result["labels"]["action"] == "Tackling"
-    assert result["score_display"] == "0.875"
-    assert result["video_url"] == "/videos/Train/action_7/clip_0.mp4"
-    assert client.get(result["video_url"]).data == b"gallery-video"
 
     video_response = client.post(
         "/api/search_video",
@@ -97,15 +84,15 @@ def test_text_and_video_search(tmp_path):
     assert video_response.status_code == 200
     body = video_response.get_json()
     assert body["results"][0]["action_id"] == "Train_action_7"
+    assert body["results"][0]["labels"]["action"] == "Tackling"
+    assert body["results"][0]["score_display"] == "0.875"
+    assert body["results"][0]["video_url"] == "/videos/Train/action_7/clip_0.mp4"
+    assert client.get(body["results"][0]["video_url"]).data == b"gallery-video"
     assert client.get(body["query_video_url"]).data == b"query-video"
 
 
 def test_rejects_unsupported_inputs(tmp_path):
     client = _make_app(tmp_path, model="internvideo2-1b").test_client()
-
-    response = client.post("/api/search_text", json={"query": "tackle"})
-    assert response.status_code == 400
-    assert "not supported" in response.get_json()["error"]
 
     response = client.post(
         "/api/search_video",

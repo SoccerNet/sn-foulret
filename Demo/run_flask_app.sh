@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Launch the SoccerNet-FoulRet demo from a model-specific virtual environment.
+# Launch the SoccerNet-FoulRet demo from the active Python environment.
 # Configuration is supplied through environment variables; see README.md.
 
 set -euo pipefail
@@ -18,13 +18,13 @@ LORA_PATH="${LORA_PATH:-}"
 
 case "${MODEL}" in
     qwen3vl-*)
-        DEFAULT_VENV="${PROJECT_ROOT}/.venv"
+        EXPECTED_ENV="foulret-qwen"
         ;;
     vlm2vec-v2|lamra)
-        DEFAULT_VENV="${PROJECT_ROOT}/.venv_vlm2vec"
+        EXPECTED_ENV="foulret-vlm2vec"
         ;;
     internvideo2-*)
-        DEFAULT_VENV="${PROJECT_ROOT}/.venv_internvideo2"
+        EXPECTED_ENV="foulret-internvideo2"
         ;;
     *)
         echo "Unknown model: ${MODEL}" >&2
@@ -32,17 +32,24 @@ case "${MODEL}" in
         ;;
 esac
 
-VENV_PATH="${VENV_PATH:-${DEFAULT_VENV}}"
-PYTHON="${VENV_PATH}/bin/python"
-if [[ ! -x "${PYTHON}" ]]; then
-    echo "Virtual environment not found at ${VENV_PATH}." >&2
-    echo "Create the model environment described in README.md, then retry." >&2
+if [[ -n "${PYTHON_BIN:-}" ]]; then
+    PYTHON="${PYTHON_BIN}"
+elif [[ -n "${VENV_PATH:-}" ]]; then
+    # Backward-compatible override for existing local installations.
+    PYTHON="${VENV_PATH}/bin/python"
+else
+    PYTHON="$(command -v python || true)"
+fi
+if [[ -z "${PYTHON}" || ! -x "${PYTHON}" ]]; then
+    echo "Python was not found." >&2
+    echo "Activate the ${EXPECTED_ENV} Conda environment described in README.md, then retry." >&2
     exit 1
 fi
 
 if ! "${PYTHON}" -c "import flask" >/dev/null 2>&1; then
-    echo "Flask is not installed in ${VENV_PATH}." >&2
-    echo "Run: ${PYTHON} -m pip install -r ${PROJECT_ROOT}/requirements/demo.txt" >&2
+    echo "Flask is not installed in the active Python environment (${PYTHON})." >&2
+    echo "Activate ${EXPECTED_ENV}, then run:" >&2
+    echo "  ${PYTHON} -m pip install -r ${PROJECT_ROOT}/requirements/demo.txt" >&2
     exit 1
 fi
 
@@ -95,6 +102,7 @@ if [[ -n "${LORA_PATH}" ]]; then
 fi
 
 echo "Starting SoccerNet-FoulRet with ${MODEL}."
+echo "Python: ${PYTHON}"
 echo "Open http://localhost:${PORT}"
 cd "${PROJECT_ROOT}"
 exec "${PYTHON}" "${app_args[@]}"

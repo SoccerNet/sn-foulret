@@ -26,7 +26,7 @@ MODEL_REGISTRY = {
         "module": "retrieval.models.qwen3vl_embedder",
         "class_name": "Qwen3VLEmbeddingModel",
         "hf_name": "Qwen/Qwen3-VL-Embedding-8B",
-        "dim": 4096,  # MRL default 4096 (verified at runtime); reuses the Qwen .venv stack
+        "dim": 4096,  # MRL default 4096 (verified at runtime); reuses the Qwen environment
         "data_subdir": "mvfouls",
     },
     "qwen3vl-2b-finetuned": {
@@ -41,14 +41,14 @@ MODEL_REGISTRY = {
         "module": "retrieval.models.lamra_embedder",
         "class_name": "LamRAEmbeddingModel",
         "hf_name": "code-kunkun/LamRA-Ret",
-        "dim": 3584,  # Qwen2-VL-7B hidden size (verified at runtime; native-video, runs in .venv_vlm2vec)
+        "dim": 3584,  # Qwen2-VL-7B hidden size (verified at runtime; native-video)
         "data_subdir": "mvfouls",
     },
     "internvideo2-1b": {
         "module": "retrieval.models.internvideo2_embedder",
         "class_name": "InternVideo2EmbeddingModel",
         "hf_name": "OpenGVLab/InternVideo2-Stage2_1B-224p-f4",
-        "dim": 512,  # vision_proj -> embed_dim (true-video ViT, native 4 frames@224, runs in .venv_internvideo2)
+        "dim": 512,  # vision_proj -> embed_dim (true-video ViT, native 4 frames@224)
         "data_subdir": "mvfouls",
         "init_kwargs": {"model_size": "1b", "ckpt_filename": "InternVideo2-stage2_1b-224p-f4.pt"},
     },

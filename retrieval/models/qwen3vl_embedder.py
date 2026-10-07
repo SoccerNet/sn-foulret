@@ -132,7 +132,7 @@ class Qwen3VLEmbeddingModel(BaseEmbeddingModel):
             raise ImportError(
                 "Could not import the vendored Qwen3VLEmbedder from "
                 "retrieval.models.qwen3vl_backend. Ensure the project "
-                "venv has torch, transformers (with qwen3_vl) and qwen-vl-utils "
+                "environment has torch, transformers (with qwen3_vl) and qwen-vl-utils "
                 "installed (see requirements/qwen.txt)."
             ) from e
 

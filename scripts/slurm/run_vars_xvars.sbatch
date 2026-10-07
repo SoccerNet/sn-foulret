@@ -13,8 +13,9 @@
 set -euo pipefail
 export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"
 REPO="${SLURM_SUBMIT_DIR:-$PWD}"; cd "$REPO"; mkdir -p slurm_outputs
-module load python/3.11.0
-source "$REPO/.venv/bin/activate"
+eval "$(conda shell.bash hook)"
+conda activate foulret-qwen
+unset PYTHONPATH; export PYTHONNOUSERSITE=1
 echo ">> generate the paper VARS+XVARS rankings for Test and Valid"
 for SP in Test Valid; do
   python -m retrieval.vars_xvars.retrieve --split "$SP"

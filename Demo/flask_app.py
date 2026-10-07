@@ -21,6 +21,7 @@ import shutil
 import sys
 import tempfile
 import threading
+import time
 from typing import Callable, Optional
 import uuid
 
@@ -69,11 +70,6 @@ class DemoConfig:
         base = self.index_dir or PROJECT_ROOT / "retrieval" / "indexes" / self.model
         return base.expanduser().resolve()
 
-    @property
-    def supports_text(self) -> bool:
-        return self.model.startswith("qwen3vl")
-
-
 class DemoState:
     """Own the lazily initialized model, index, annotations, and uploads."""
 
@@ -87,6 +83,10 @@ class DemoState:
         self._engine = None
         self._engine_error: Optional[str] = None
         self._loading = False
+        self._loading_stage = "Waiting to start initialization…"
+        self._loading_step = 0
+        self._loading_total_steps = 3
+        self._loading_started_at: Optional[float] = None
         self._lock = threading.Lock()
         self._annotations = None
         self.upload_dir = Path(tempfile.mkdtemp(prefix="sn_foulret_uploads_"))
@@ -108,6 +108,29 @@ class DemoState:
     def ready(self) -> bool:
         return self._engine is not None
 
+    @property
+    def loading_stage(self) -> str:
+        return self._loading_stage
+
+    @property
+    def loading_step(self) -> int:
+        return self._loading_step
+
+    @property
+    def loading_total_steps(self) -> int:
+        return self._loading_total_steps
+
+    @property
+    def loading_elapsed_seconds(self) -> int:
+        if self._loading_started_at is None:
+            return 0
+        return max(0, int(time.monotonic() - self._loading_started_at))
+
+    def _set_loading_stage(self, step: int, message: str) -> None:
+        self._loading_step = step
+        self._loading_stage = message
+        logging.info("Demo initialization: %s", message)
+
     def _build_engine(self):
         # Heavy dependencies stay out of module import and the Flask reloader.
         from retrieval.engine import RetrievalEngine
@@ -118,6 +141,7 @@ class DemoState:
         embedding_path = index_dir / "embeddings_train.json"
         faiss_path = index_dir / "faiss_index_train.bin"
 
+        self._set_loading_stage(1, "Checking the prepared data and Train index…")
         missing = [str(path) for path in (embedding_path, faiss_path) if not path.is_file()]
         if missing:
             build = (
@@ -144,7 +168,10 @@ class DemoState:
         elif model_requires_lora(self.config.model):
             raise ValueError(f"--lora_path is required for model {self.config.model}")
 
+        model_name = MODEL_DISPLAY_NAMES.get(self.config.model, self.config.model)
+        self._set_loading_stage(2, f"Loading {model_name} weights onto the compute device…")
         model = get_model(self.config.model, **model_kwargs)
+        self._set_loading_stage(3, "Loading the FAISS Train index…")
         return RetrievalEngine(
             model=model,
             project_root=str(data_dir),
@@ -160,12 +187,16 @@ class DemoState:
                 return self._engine
             self._loading = True
             self._engine_error = None
+            self._loading_started_at = time.monotonic()
+            self._set_loading_stage(0, "Starting demo initialization…")
             try:
                 self._engine = self._engine_factory()
+                self._set_loading_stage(self._loading_total_steps, "Ready")
                 logging.info("Loaded demo model and index for %s", self.config.model)
                 return self._engine
             except Exception as exc:
                 self._engine_error = str(exc)
+                self._loading_stage = "Initialization failed"
                 logging.exception("Could not initialize the demo")
                 raise
             finally:
@@ -263,6 +294,10 @@ def create_app(
             ready=state.ready,
             model=config.model,
             error=state.error,
+            stage=state.loading_stage,
+            step=state.loading_step,
+            total_steps=state.loading_total_steps,
+            elapsed_seconds=state.loading_elapsed_seconds,
         )
 
     @app.get("/")
@@ -279,25 +314,7 @@ def create_app(
             "index.html",
             model_display=MODEL_DISPLAY_NAMES.get(config.model, config.model),
             total_indexed=f"{total_indexed:,}",
-            supports_text=config.supports_text,
         )
-
-    @app.post("/api/search_text")
-    def search_text():
-        if not config.supports_text:
-            return _json_error(f"Text search is not supported by {config.model}.", 400)
-        payload = request.get_json(silent=True) or {}
-        query = str(payload.get("query", "")).strip()
-        if not query:
-            return _json_error("Enter a description to search.", 400)
-        try:
-            engine = state.get_engine()
-            query_embedding = engine.model.embed_text(query, is_query=True)
-            results = engine.search(query_embedding, top_k=config.top_k)
-            return jsonify(results=state.format_results(results))
-        except Exception as exc:
-            logging.exception("Text search failed")
-            return _json_error(str(exc))
 
     @app.post("/api/search_video")
     def search_video():

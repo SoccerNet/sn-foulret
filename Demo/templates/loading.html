@@ -18,17 +18,36 @@
         .ball { font-size: 54px; }
         h1 { margin: 14px 0 4px; font: 700 38px/1.1 Georgia, serif; }
         .model { opacity: .8; }
-        .spinner {
-            width: 54px;
-            height: 54px;
-            margin: 30px auto 18px;
-            border: 5px solid rgba(255, 255, 255, .25);
-            border-top-color: #efc85e;
-            border-radius: 50%;
-            animation: spin .9s linear infinite;
+        .progress {
+            width: 100%;
+            height: 12px;
+            margin: 34px auto 18px;
+            overflow: hidden;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .22);
         }
-        @keyframes spin { to { transform: rotate(360deg); } }
+        #progress-bar {
+            width: 4%;
+            height: 100%;
+            border-radius: inherit;
+            background: #efc85e;
+            transition: width .35s ease;
+        }
         #status { font-weight: 700; }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, .76);
+            font-size: 13px;
+        }
+        #note {
+            min-height: 42px;
+            margin: 18px auto 0;
+            color: rgba(255, 255, 255, .72);
+            font-size: 13px;
+        }
         #error {
             display: none;
             margin-top: 22px;
@@ -46,11 +65,33 @@
     <div class="ball">⚽</div>
     <h1>SoccerNet-FoulRet</h1>
     <div class="model">{{ model_display }}</div>
-    <div class="spinner" id="spinner"></div>
-    <div id="status">Loading the model and FAISS index…</div>
+    <div class="progress" role="progressbar" aria-label="Demo initialization progress" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="status">Starting demo initialization…</div>
+    <div class="meta">
+        <span id="step">Starting</span>
+        <span id="elapsed">0 seconds elapsed</span>
+    </div>
+    <div id="note">Progress represents completed initialization stages, not a time estimate.</div>
     <div id="error" role="alert"></div>
 </main>
 <script>
+const progress = document.querySelector(".progress");
+const progressBar = document.getElementById("progress-bar");
+const statusText = document.getElementById("status");
+const stepText = document.getElementById("step");
+const elapsedText = document.getElementById("elapsed");
+const noteText = document.getElementById("note");
+
+function formatElapsed(totalSeconds) {
+    const seconds = Math.max(0, Number(totalSeconds) || 0);
+    const minutes = Math.floor(seconds / 60);
+    const remainder = seconds % 60;
+    if (minutes) return minutes + "m " + remainder + "s elapsed";
+    return seconds + "s elapsed";
+}
+
 async function poll() {
     try {
         const response = await fetch("/health", {cache: "no-store"});
@@ -60,15 +101,27 @@ async function poll() {
             return;
         }
         if (data.error) {
-            document.getElementById("spinner").style.display = "none";
-            document.getElementById("status").textContent = "The demo could not start.";
+            progressBar.style.background = "#ffaaaa";
+            statusText.textContent = "The demo could not start.";
             const error = document.getElementById("error");
             error.textContent = data.error;
             error.style.display = "block";
             return;
         }
+        const step = Number(data.step) || 0;
+        const total = Number(data.total_steps) || 3;
+        const percent = step === 0 ? 4 : Math.min(100, Math.round(step / total * 100));
+        progressBar.style.width = percent + "%";
+        progress.setAttribute("aria-valuemax", String(total));
+        progress.setAttribute("aria-valuenow", String(step));
+        statusText.textContent = data.stage || "Loading the model and FAISS index…";
+        stepText.textContent = step === 0 ? "Starting" : "Step " + step + " of " + total;
+        elapsedText.textContent = formatElapsed(data.elapsed_seconds);
+        if ((Number(data.elapsed_seconds) || 0) >= 120) {
+            noteText.textContent = "This is taking longer than usual. Check the server terminal and confirm that CUDA is available.";
+        }
     } catch (error) {
-        document.getElementById("status").textContent = "Waiting for the local server…";
+        statusText.textContent = "Waiting for the local server…";
     }
     window.setTimeout(poll, 1500);
 }

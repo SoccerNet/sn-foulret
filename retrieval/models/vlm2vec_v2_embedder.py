@@ -62,7 +62,7 @@ class VLM2VecV2EmbeddingModel(BaseEmbeddingModel):
         except ImportError as e:
             raise ImportError(
                 f"Could not import the VLM2Vec clone from {_VLM2VEC_ROOT}. Ensure the "
-                f"vlm2vec venv has its requirements installed (requirements/vlm2vec.txt) "
+                f"foulret-vlm2vec environment has its requirements installed (requirements/vlm2vec.txt) "
                 f"and Clones/VLM2Vec exists."
             ) from e
 

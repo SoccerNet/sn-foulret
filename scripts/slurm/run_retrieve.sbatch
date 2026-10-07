@@ -18,16 +18,17 @@ MODEL="${1:?model key required}"
 NFRAMES=16
 INSTR="Retrieve videos similar to the query video."          # generic (headline) instruction
 case "$MODEL" in
-  qwen3vl-*)        VENV=.venv ;;
-  vlm2vec-*|lamra)  VENV=.venv_vlm2vec ;;
-  internvideo2-*)   VENV=.venv_internvideo2 ;;
+  qwen3vl-*)        CONDA_ENV=foulret-qwen ;;
+  vlm2vec-*|lamra)  CONDA_ENV=foulret-vlm2vec ;;
+  internvideo2-*)   CONDA_ENV=foulret-internvideo2 ;;
   *) echo "unknown model: $MODEL"; exit 1 ;;
 esac
-module load python/3.11.0
-source "$REPO/$VENV/bin/activate"
+eval "$(conda shell.bash hook)"
+conda activate "$CONDA_ENV"
+unset PYTHONPATH; export PYTHONNOUSERSITE=1
 INSTR_ARG=(--instruction "$INSTR")
 case "$MODEL" in internvideo2-*) INSTR_ARG=() ;; esac        # video-native: no instruction
-echo ">> retrieve $MODEL  nframes=$NFRAMES  venv=$VENV"
+echo ">> retrieve $MODEL  nframes=$NFRAMES  conda_env=$CONDA_ENV"
 python -m retrieval.retrieve --model "$MODEL" \
     --index_base "retrieval/indexes/${MODEL}" \
     --data_dir data/mvfouls_window --nframes "$NFRAMES" \

@@ -26,17 +26,28 @@ _MM_ROOT = os.path.join(_REPO_ROOT, "Clones", "InternVideo", "InternVideo2", "mu
 
 def _apply_iv2_import_stubs():
     """Inject the shims/stubs needed to import ONLY the stage2 vision path from the read-only clone."""
-    # (a) fused-op shim: core flash-attn wheel lacks DropoutAddRMSNorm (FusedMLP is present).
-    #     Unused at runtime (use_fused_rmsnorm=False) but the CLIP-vision siblings import it.
-    if "flash_attn.ops.rms_norm" not in sys.modules:
-        try:
-            import flash_attn.ops.rms_norm as _r  # noqa: F401
-            if not hasattr(_r, "DropoutAddRMSNorm"):
-                raise ImportError
-        except Exception:
-            m = types.ModuleType("flash_attn.ops.rms_norm")
-            m.DropoutAddRMSNorm = type("DropoutAddRMSNorm", (object,), {})
-            sys.modules["flash_attn.ops.rms_norm"] = m
+    # (a) This adapter executes InternVideo2's standard PyTorch attention path
+    #     (use_flash_attn/use_fused_* are false). Upstream nevertheless imports
+    #     its optional FlashAttention wrapper and two unused CLIP vision siblings
+    #     unconditionally. Stub only those unused imports so flash-attn is optional.
+    if "models.backbones.internvideo2.flash_attention_class" not in sys.modules:
+        m = types.ModuleType("models.backbones.internvideo2.flash_attention_class")
+
+        class _DisabledFlashAttention:
+            def __init__(self, *args, **kwargs):
+                raise RuntimeError("FlashAttention is disabled for this InternVideo2 adapter")
+
+        m.FlashAttention = _DisabledFlashAttention
+        sys.modules[m.__name__] = m
+
+    for name, symbol in [
+        ("models.backbones.internvideo2.internvl_clip_vision", "internvl_clip_6b"),
+        ("models.backbones.internvideo2.internvideo2_clip_vision", "InternVideo2"),
+    ]:
+        if name not in sys.modules:
+            m = types.ModuleType(name)
+            setattr(m, symbol, type(symbol, (object,), {}))
+            sys.modules[name] = m
 
     # (b) stub the 4 unused top-level model variants models/__init__.py eagerly imports.
     for name, cls in [
@@ -105,8 +116,8 @@ class InternVideo2EmbeddingModel(BaseEmbeddingModel):
             from demo.utils import setup_internvideo2, frames2tensor
         except ImportError as e:
             raise ImportError(
-                f"Could not import InternVideo2 from {_MM_ROOT}. Ensure .venv_internvideo2 deps "
-                f"(core flash-attn, transformers==4.46.3, peft==0.13.2, easydict, open_clip_torch...) "
+                f"Could not import InternVideo2 from {_MM_ROOT}. Ensure foulret-internvideo2 dependencies "
+                f"(transformers==4.46.3, peft==0.13.2, easydict, open_clip_torch...) "
                 f"are installed and the clone exists."
             ) from e
         self._frames2tensor = frames2tensor
@@ -164,7 +175,7 @@ class InternVideo2EmbeddingModel(BaseEmbeddingModel):
         # MUST be None (not ""): the encoder fn does `if pretrained is not None: torch.load(pretrained)`,
         # so "" would crash. Full stage2 weights are loaded by setup_internvideo2 via cfg.pretrained_path.
         cfg.model.vision_encoder.pretrained = None
-        cfg.use_half_precision = False                  # keep naive attention (no flash/fused ops on this venv)
+        cfg.use_half_precision = False                  # keep naive attention (no flash/fused ops in this environment)
         cfg.use_bf16 = True                             # bf16 weights (memory; consistent with other models)
 
         logger.info(f"Building InternVideo2-Stage2 1B (num_frames={self.num_frames}) ...")

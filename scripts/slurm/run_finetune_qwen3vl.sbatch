@@ -26,8 +26,9 @@ cd "$REPO"
 mkdir -p slurm_outputs finetuning_outputs
 
 export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"
-module load python/3.11.0
-source "$REPO/.venv/bin/activate"
+eval "$(conda shell.bash hook)"
+conda activate foulret-qwen
+unset PYTHONPATH; export PYTHONNOUSERSITE=1
 
 MODEL=qwen3vl-2b-finetuned
 RUN_DIR="$REPO/finetuning_outputs/qwen3vl-2b-labelsup"
@@ -80,6 +81,12 @@ python -m retrieval.retrieve \
 
 echo ">> Fine-tuned predictions are ready"
 echo ">> Evaluate reproduced predictions"
-python -m evaluation.precedent | tee "$RUN_DIR/evaluate_precedent.txt"
-python -m evaluation.category | tee "$RUN_DIR/evaluate_category.txt"
+python -m evaluation.precedent \
+    --rankings-dir "$PRED_DIR" \
+    --method-name "Fine-tuned Qwen3-VL-Embedding-2B" \
+    | tee "$RUN_DIR/evaluate_precedent.txt"
+python -m evaluation.category \
+    --rankings-dir "$PRED_DIR" \
+    --method-name "Fine-tuned Qwen3-VL-Embedding-2B" \
+    | tee "$RUN_DIR/evaluate_category.txt"
 echo "=== DONE ==="

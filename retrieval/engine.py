@@ -99,6 +99,14 @@ class RetrievalEngine:
             logger.error("Index not built or loaded. Cannot perform search.")
             return []
 
+        available = min(int(self.index.ntotal), len(self.df))
+        if available == 0 or top_k < 1:
+            return []
+        # FAISS pads requests larger than the index with -1 indices and minimum
+        # float scores. Clamp the request to the available index size so those
+        # sentinels cannot become duplicate rows through negative indexing.
+        top_k = min(top_k, available)
+
         faiss.normalize_L2(query_emb)
         distances, indices = self.index.search(query_emb, top_k)
 

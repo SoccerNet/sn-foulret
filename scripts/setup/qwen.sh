@@ -1,50 +1,41 @@
 #!/usr/bin/env bash
 #
-# Create the dedicated Qwen3-VL environment used for retrieval and fine-tuning.
+# Create the dedicated Qwen3-VL Conda environment used for retrieval and fine-tuning.
 #
 #   bash scripts/setup/qwen.sh
 #
 # Then run the pipeline with:
 #   sbatch scripts/slurm/run_retrieve.sbatch <model>  (optional; see README.md)
 #
-# Some cluster Python modules export a shared PYTHONPATH that can shadow virtual
-# environment packages. This script clears it during installation and activation.
+# Some systems export a shared PYTHONPATH or expose user-site packages. This
+# script clears both sources of package leakage during installation.
 
 set -euo pipefail
 REPO="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$REPO"
 
-command -v module >/dev/null && module load python/3.11.0 || true
+if ! command -v conda >/dev/null 2>&1; then
+  echo "Conda was not found. Install Miniconda or Anaconda first." >&2
+  exit 1
+fi
+eval "$(conda shell.bash hook)"
+ENV_NAME=foulret-qwen
 
-# Isolate from the module's leaked PYTHONPATH so pip installs the FULL closure.
+# Isolate pip from packages outside this environment.
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
 
-echo ">> Creating venv at $REPO/.venv"
-rm -rf .venv
-python -m venv .venv
-source .venv/bin/activate
-unset PYTHONPATH            # the activation hook is appended later in this script
-export PYTHONNOUSERSITE=1
+if conda env list | awk '{print $1}' | grep -qx "$ENV_NAME"; then
+  echo ">> Reusing Conda environment $ENV_NAME"
+else
+  echo ">> Creating Conda environment $ENV_NAME"
+  conda create -n "$ENV_NAME" python=3.11 pip -y
+fi
+conda activate "$ENV_NAME"
 
 echo ">> Installing requirements/qwen.txt"
 python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements/qwen.txt
-
-# Make the isolation a permanent property of THIS venv: appended (idempotently) so
-# every future `source .venv/bin/activate` neutralizes the module's PYTHONPATH leak.
-ACTIVATE="$REPO/.venv/bin/activate"
-if ! grep -q "FoulRet venv isolation" "$ACTIVATE"; then
-  cat >> "$ACTIVATE" <<'ISO'
-
-# --- FoulRet venv isolation (appended by scripts/setup/qwen.sh) ---
-# `module load python/3.11.0` exports PYTHONPATH at the shared site-packages, which
-# would shadow this venv. Neutralize it whenever the venv is active.
-unset PYTHONPATH
-export PYTHONNOUSERSITE=1
-ISO
-  echo ">> Patched $ACTIVATE with cluster PYTHONPATH isolation"
-fi
+python -m pip install -r requirements/qwen.txt
 
 echo ">> Verifying the environment"
 python - <<'PY'
@@ -68,4 +59,4 @@ assert bad == 0, f"{bad} missing dependencies"
 print("  OK: deps complete, numpy", numpy.__version__, ", vendored backend imports clean")
 PY
 
-echo ">> Done. Activate with:  source .venv/bin/activate"
+echo ">> Done. Activate with: conda activate $ENV_NAME"

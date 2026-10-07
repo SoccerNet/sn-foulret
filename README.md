@@ -17,7 +17,7 @@ visual or text-mediated models, and evaluate any set of rankings on FoulRet.
 
 ```
 data/foulret/        FoulRet benchmark judgments
-Demo/                local Flask interface for video and text queries
+Demo/                local Flask interface for video queries
 evaluation/          precedent, category, and ablation evaluation
 retrieval/           retrieval methods, indexes, and rankings
 requirements/        environment-specific dependencies
@@ -31,8 +31,10 @@ train_qwen3vl.py     fine-tune Qwen3-VL-Embedding-2B
 ### Recommended demo setup
 
 This is the shortest path to a working installation. It uses
-Qwen3-VL-Embedding-2B. You need Python 3.11, the SoccerNet-MVFoul Train split, and preferably an NVIDIA GPU.
-Run every command from the repository root.
+Qwen3-VL-Embedding-2B. You need
+[Miniconda or Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/),
+the SoccerNet-MVFoul Train split, and preferably an NVIDIA GPU. A cluster is
+not required. Run every command from the repository root.
 
 **1. Clone and install**
 
@@ -40,12 +42,14 @@ Run every command from the repository root.
 git clone https://github.com/SoccerNet/sn-foulret.git
 cd sn-foulret
 
-python3.11 -m venv .venv
-source .venv/bin/activate
+conda create -n foulret-qwen python=3.11 pip -y
+conda activate foulret-qwen
+
+# Prevent packages from other Python installations leaking into this environment.
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
 python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements/qwen.txt -r requirements/demo.txt
+python -m pip install -r requirements/qwen.txt -r requirements/demo.txt
 ```
 
 **2. Add and prepare the data**
@@ -65,33 +69,29 @@ Then extract the 16-frame windows used by the model:
 python prepare_dataset.py Train
 ```
 
-**3. Build a small test index**
+**3. Build the complete Train index**
 
 The first run downloads the Qwen3-VL model weights. Building the index is
 GPU-intensive.
 
 ```bash
-SMOKE_INDEX=retrieval/indexes/qwen3vl-2b-smoke
-
 python -m retrieval.build_full_index \
   --model qwen3vl-2b \
   --data_dir data/mvfouls_window \
-  --index_dir "$SMOKE_INDEX" \
+  --index_dir retrieval/indexes/qwen3vl-2b \
   --nframes 16 \
-  --clip_mode multi_clip \
-  --limit 10
+  --clip_mode multi_clip
 ```
 
 **4. Start the demo**
 
 ```bash
-INDEX_DIR="$PWD/$SMOKE_INDEX" bash Demo/run_flask_app.sh
+bash Demo/run_flask_app.sh
 ```
 
-Open [http://localhost:5000](http://localhost:5000). This ten-action index is
-only an installation check; its results are not representative of the full
-benchmark. See [Full local demo](#full-local-demo) to build the complete Train
-index.
+Open the URL printed by the launcher. With the default settings, it is
+[http://localhost:5000](http://localhost:5000). The demo searches the complete
+Train gallery.
 
 ## Optional workflows and model backends
 
@@ -100,60 +100,64 @@ environment required for the workflow you intend to run:
 
 | Use | Environment | Additional source code |
 |---|---|---|
-| Evaluate included rankings | `.venv_eval` | none |
-| Run VARS+XVARS or Qwen3-VL | `.venv` | none |
-| Run VLM2Vec-V2 or LamRA | `.venv_vlm2vec` | `Clones/VLM2Vec` |
-| Run InternVideo2 | `.venv_internvideo2` | `Clones/InternVideo` |
+| Evaluate included rankings | `foulret-eval` | none |
+| Run VARS+XVARS or Qwen3-VL | `foulret-qwen` | none |
+| Run VLM2Vec-V2 or LamRA | `foulret-vlm2vec` | `Clones/VLM2Vec` |
+| Run InternVideo2 | `foulret-internvideo2` | `Clones/InternVideo` |
+
+Keep these as separate environments: the backends require incompatible pinned
+versions of Torch, Transformers, PEFT, and NumPy.
 
 ### Evaluation only
 
 ```bash
-python3.11 -m venv .venv_eval
-source .venv_eval/bin/activate
+conda create -n foulret-eval python=3.11 pip -y
+conda activate foulret-eval
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
 python -m pip install --upgrade pip
-pip install -r requirements/evaluation.txt
+python -m pip install -r requirements/evaluation.txt
 ```
 
 ### Qwen3-VL without the demo
 
 ```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
+conda create -n foulret-qwen python=3.11 pip -y
+conda activate foulret-qwen
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
 python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements/qwen.txt
+python -m pip install -r requirements/qwen.txt
 ```
 
 ### VLM2Vec-V2 or LamRA
 
 ```bash
 git submodule update --init Clones/VLM2Vec
-python3.11 -m venv .venv_vlm2vec
-source .venv_vlm2vec/bin/activate
+conda create -n foulret-vlm2vec python=3.11 pip -y
+conda activate foulret-vlm2vec
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
 python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements/vlm2vec.txt
+python -m pip install -r requirements/vlm2vec.txt -r requirements/demo.txt
 ```
 
 ### InternVideo2
 
 ```bash
 git submodule update --init Clones/InternVideo
-python3.11 -m venv .venv_internvideo2
-source .venv_internvideo2/bin/activate
+conda create -n foulret-internvideo2 python=3.11 pip -y
+conda activate foulret-internvideo2
 unset PYTHONPATH
 export PYTHONNOUSERSITE=1
 python -m pip install --upgrade pip setuptools wheel
-pip install torch==2.4.1 torchvision==0.19.1 \
+python -m pip install torch==2.4.1 torchvision==0.19.1 \
   --index-url https://download.pytorch.org/whl/cu121
-pip install "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3.post1/flash_attn-2.8.3.post1+cu12torch2.4cxx11abiFALSE-cp311-cp311-linux_x86_64.whl"
-pip install -r requirements/internvideo2.txt
+python -m pip install -r requirements/internvideo2.txt -r requirements/demo.txt
 ```
 
-Use a compatible FlashAttention wheel if your Python, Torch, or CUDA versions
-differ. InternVideo2-1B is gated: accept the conditions on the
+This adapter uses InternVideo2's standard PyTorch attention path, so
+FlashAttention is not required. InternVideo2-1B is gated: accept the conditions on the
 [model page](https://huggingface.co/OpenGVLab/InternVideo2-Stage2_1B-224p-f4),
 then run `hf auth login` from the InternVideo environment. Model weights are
 downloaded from Hugging Face on first use.
@@ -170,14 +174,14 @@ Before building an index or running retrieval, extract the 16-frame temporal
 windows used by the models:
 
 ```bash
-source .venv/bin/activate       # or either model-specific environment
+conda activate foulret-qwen     # or the required model-specific environment
 python prepare_dataset.py       # -> data/mvfouls_window/
 ```
 
 To evaluate the existing rankings already in the codebase without processing videos, copy only the annotations:
 
 ```bash
-source .venv_eval/bin/activate
+conda activate foulret-eval
 python prepare_dataset.py --annotations-only
 ```
 
@@ -189,7 +193,7 @@ The following example retrieves Test queries with Qwen3-VL-Embedding-2B. After
 installing its environment and preparing the dataset:
 
 ```bash
-source .venv/bin/activate
+conda activate foulret-qwen
 MODEL=qwen3vl-2b
 
 python -m retrieval.build_full_index \
@@ -242,116 +246,19 @@ you want to compare the new rankings with the repository versions.
 
 ### VARS+XVARS retrieval
 
-The text-mediated pipeline uses the included VARS attributes, XVARS answers,
-and Train answer embeddings:
-
 ```bash
-source .venv/bin/activate
+conda activate foulret-qwen
 python -m retrieval.vars_xvars.retrieve --split Test
 python -m retrieval.vars_xvars.retrieve --split Valid
 ```
 
 Results are written to `retrieval/vars_xvars/rankings/`.
 
-## Full local demo
+## Demo options and troubleshooting
 
-The Flask demo accepts an uploaded MP4 or text description and retrieves the
-most similar actions from the Train gallery. The default Qwen3-VL setup needs
-Python 3.11, access to SoccerNet-MVFoul, and a prebuilt FAISS index. An NVIDIA
-GPU is strongly recommended for building the index and running inference.
-
-The dataset and index are not included in the repository. Starting from a
-clean clone, run the following steps from the repository root.
-
-### 1. Install the demo environment
-
-```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-unset PYTHONPATH
-export PYTHONNOUSERSITE=1
-python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements/qwen.txt -r requirements/demo.txt
-```
-
-### 2. Prepare SoccerNet-MVFoul
-
-Download [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and arrange
-it as follows:
-
-```text
-data/mvfouls/
-  Train/
-    annotations.json
-    action_*/clip_*.mp4
-  Valid/
-    annotations.json
-    action_*/clip_*.mp4
-  Test/
-    annotations.json
-    action_*/clip_*.mp4
-```
-
-Extract the 16-frame windows used by the released models:
-
-```bash
-python prepare_dataset.py
-```
-
-This creates `data/mvfouls_window/{Train,Valid,Test}/`.
-
-### 3. Build the Train index
-
-Building the full gallery index is a separate, GPU-intensive step. Model
-weights are downloaded from Hugging Face on first use.
-
-```bash
-python -m retrieval.build_full_index \
-  --model qwen3vl-2b \
-  --data_dir data/mvfouls_window \
-  --index_dir retrieval/indexes/qwen3vl-2b \
-  --nframes 16 \
-  --clip_mode multi_clip
-```
-
-The command must produce both files below:
-
-```text
-retrieval/indexes/qwen3vl-2b/embeddings_train.json
-retrieval/indexes/qwen3vl-2b/faiss_index_train.bin
-```
-
-### 4. Start the demo
-
-```bash
-bash Demo/run_flask_app.sh
-```
-
-Open [http://localhost:5000](http://localhost:5000). The launcher never builds
-an index automatically. If an index file is missing, it exits with a warning
-and prints the exact build command that must be completed first.
-
-### Quick smoke test
-
-To verify the UI without indexing the complete Train gallery, build a separate
-ten-action index:
-
-```bash
-SMOKE_INDEX=retrieval/indexes/qwen3vl-2b-smoke
-
-python -m retrieval.build_full_index \
-  --model qwen3vl-2b \
-  --data_dir data/mvfouls_window \
-  --index_dir "$SMOKE_INDEX" \
-  --nframes 16 \
-  --clip_mode multi_clip \
-  --limit 10
-
-INDEX_DIR="$PWD/$SMOKE_INDEX" bash Demo/run_flask_app.sh
-```
-
-The smoke index is only for checking the installation and interface; its search
-results are not representative of the full benchmark.
+The Quick Start builds the complete Qwen3-VL Train index. The launcher never
+builds an index automatically; if an index file is missing, it exits with a
+warning and prints the build command that must be completed first.
 
 ### Other models and settings
 
@@ -365,21 +272,21 @@ LORA_PATH=finetuning_outputs/qwen3vl-2b-labelsup/best_model \
 bash Demo/run_flask_app.sh
 ```
 
-The launcher selects `.venv` for Qwen3-VL, `.venv_vlm2vec` for VLM2Vec/LamRA,
-and `.venv_internvideo2` for InternVideo2. Override `VENV_PATH`, `DATA_DIR`,
-`INDEX_DIR`, `TOP_K`, `HOST`, or `PORT` when needed. The default
+Run the launcher from the environment for the selected model. It uses the
+active environment's `python`; override it with `PYTHON_BIN` if needed. You can
+also override `DATA_DIR`, `INDEX_DIR`, `TOP_K`, `HOST`, or `PORT`. The default
 `HOST=127.0.0.1` keeps the development server local; do not expose it directly
 to the internet.
 
-All registered models support uploaded MP4 queries. Text-to-video queries are
-available for Qwen3-VL models; the other adapters are video-to-video only.
+All registered models support uploaded MP4 video-to-video queries.
 
 ### Troubleshooting
 
 | Message or symptom | Resolution |
 |---|---|
-| `Virtual environment not found` | Create the model-specific environment from the Setup section. |
-| `Flask is not installed` | Activate that environment and run `pip install -r requirements/demo.txt`. |
+| `Python was not found` | Install Conda and activate the required environment from Optional workflows and model backends. |
+| `Flask is not installed` | Activate that environment and run `python -m pip install -r requirements/demo.txt`. |
+| Model download fills a small home quota | Set `HF_HOME` to a larger location before running the command, for example `export HF_HOME=/path/with/space/huggingface`. |
 | `Prepared Train data not found` | Check the dataset layout, then run `python prepare_dataset.py`. |
 | `The Train index required by the demo is missing` | Run the printed `retrieval.build_full_index` command, then restart the launcher. |
 | Model download is unauthorized | For a gated model, accept its access conditions and authenticate with `hf auth login`. |
@@ -408,7 +315,12 @@ Each file maps a query action to an ordered list of Train action IDs:
 }
 ```
 
+Activate the evaluation environment and prepare the annotations first:
+
 ```bash
+conda activate foulret-eval
+python prepare_dataset.py --annotations-only
+
 python -m evaluation.precedent \
   --rankings-dir outputs/my_model \
   --method-name "My Model"
@@ -427,7 +339,7 @@ The repository includes rankings for all methods in the paper. To evaluate
 them without loading the models:
 
 ```bash
-source .venv_eval/bin/activate
+conda activate foulret-eval
 python prepare_dataset.py --annotations-only
 python -m evaluation.precedent            # Table 3
 python -m evaluation.category             # Table 4
@@ -436,13 +348,13 @@ python -m evaluation.instruction_ablation # Table 5
 
 ## Additional experiments
 
-## Fine-tune Qwen3-VL-Embedding-2B
+### Fine-tune Qwen3-VL-Embedding-2B
 
 Fine-tune Qwen3-VL-Embedding-2B with the paper configuration, then build its
 indexes and rankings:
 
 ```bash
-source .venv/bin/activate
+conda activate foulret-qwen
 
 MODEL=qwen3vl-2b-finetuned
 RUN_DIR=finetuning_outputs/qwen3vl-2b-labelsup
@@ -484,8 +396,13 @@ python -m retrieval.retrieve \
   --instruction "Retrieve videos similar to the query video." \
   --out_dir "$RANKINGS"
 
-python -m evaluation.precedent
-python -m evaluation.category
+conda activate foulret-eval
+python -m evaluation.precedent \
+  --rankings-dir "$RANKINGS" \
+  --method-name "Fine-tuned Qwen3-VL-Embedding-2B"
+python -m evaluation.category \
+  --rankings-dir "$RANKINGS" \
+  --method-name "Fine-tuned Qwen3-VL-Embedding-2B"
 ```
 
 ### Instruction ablation
@@ -523,7 +440,7 @@ python -m retrieval.retrieve \
 Evaluate the resulting rankings with:
 
 ```bash
-source .venv_eval/bin/activate
+conda activate foulret-eval
 python -m evaluation.instruction_ablation
 ```
 
