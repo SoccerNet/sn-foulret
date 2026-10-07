@@ -7,7 +7,7 @@ equivalently, regardless of camera angle, teams, or appearance. Accompanies the 
 
 [![Teaser Figure](figures/SoccerNet-FoulRet_Teaser.png)](figures/SoccerNet-FoulRet_Teaser.pdf)
 
-A memory bank for referees. We aim to AUGMENT referees rather than replace them. Automated classifiers and generative explainers emit a verdict directly, but can do so overconfidently and even hallucinate. Instead, our system takes a new foul (left) and retrieves semantically similar precedents together with the decisions that past referees reached on them (right). The referee reasons from these precedents and keeps the final call.
+A memory bank for referees. We aim to AUGMENT referees, NOT REPLACE them. Automated classifiers and generative explainers emit a verdict directly, but can do so overconfidently and even hallucinate. Instead, our system takes a new foul (left) and retrieves semantically similar precedents together with the decisions that past referees reached on them (right). The referee reasons from these precedents and keeps the final call.
 
 
 Use this repository to index SoccerNet-MVFoul clips, retrieve similar fouls with
