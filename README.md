@@ -39,18 +39,17 @@ Create only the environment required for the method you want to run:
 
 ## Setup
 
-**1. Clone with submodules**
+**1. Clone the repository**
 
 ```bash
-git clone --recursive https://github.com/SoccerNet/sn-foulret.git
+git clone https://github.com/SoccerNet/sn-foulret.git
 cd sn-foulret
 ```
 
-If you already cloned without `--recursive`, run:
-
-```bash
-git submodule update --init --recursive
-```
+The model backends are optional, so the default clone does not download
+InternVideo or VLM2Vec. Initialize only the submodule required by the model you
+intend to run, as shown below. Evaluation, VARS+XVARS, and Qwen3-VL do not
+require either submodule.
 
 **2. Virtual environments**
 
@@ -79,6 +78,7 @@ pip install -r requirements/qwen.txt
 VLM2Vec-V2 and LamRA:
 
 ```bash
+git submodule update --init Clones/VLM2Vec
 python3.11 -m venv .venv_vlm2vec
 source .venv_vlm2vec/bin/activate
 unset PYTHONPATH
@@ -90,6 +90,7 @@ pip install -r requirements/vlm2vec.txt
 InternVideo2:
 
 ```bash
+git submodule update --init Clones/InternVideo
 python3.11 -m venv .venv_internvideo2
 source .venv_internvideo2/bin/activate
 unset PYTHONPATH
@@ -222,8 +223,6 @@ clean clone, run the following steps from the repository root.
 ### 1. Install the demo environment
 
 ```bash
-git submodule update --init --recursive
-
 python3.11 -m venv .venv
 source .venv/bin/activate
 unset PYTHONPATH
