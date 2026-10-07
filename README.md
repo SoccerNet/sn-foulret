@@ -1,18 +1,18 @@
 # SoccerNet-FoulRet
 
 Code and evaluation for **SoccerNet-FoulRet**, a benchmark for *semantic* video-to-video
-retrieval of soccer fouls: given a query foul, retrieve past fouls a referee would judge
+retrieval of soccer fouls. Given a query foul, retrieve past fouls a referee would judge
 equivalently, regardless of camera angle, teams, or appearance. Accompanies the paper
 *SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Fouls*. 
 
-The repository includes the FoulRet judgments, retrieval code, and published
-rankings needed to verify the reported results.
+Use this repository to index SoccerNet-MVFoul clips, retrieve similar fouls with
+visual or text-mediated models, and evaluate any set of rankings on FoulRet.
 
 ## Layout
 
 ```
-data/foulret/         FoulRet benchmark judgments
-evaluation/          evaluation for Tables 3--5
+data/foulret/        FoulRet benchmark judgments
+evaluation/          precedent, category, and ablation evaluation
 retrieval/           retrieval methods, indexes, and rankings
 requirements/        environment-specific dependencies
 scripts/             optional setup and SLURM helpers
@@ -21,15 +21,15 @@ train_qwen3vl.py     fine-tune Qwen3-VL-Embedding-2B
 ```
 
 All commands below assume that the current directory is the repository root.
-Create only the environments required for the result you want to reproduce:
+Create only the environment required for the method you want to run:
 
-| Goal | Environment | Dataset preparation |
+| Use | Environment | Dataset preparation |
 |---|---|---|
-| Verify released Tables 3--5 | `.venv_eval` | annotations only |
-| Regenerate VARS+XVARS | `.venv` | none for Table 3; annotations for Table 4 |
-| Regenerate or fine-tune Qwen3-VL | `.venv` | complete 16-frame dataset |
-| Regenerate VLM2Vec-V2 or LamRA | `.venv_vlm2vec` | complete 16-frame dataset |
-| Regenerate InternVideo2 | `.venv_internvideo2` | complete 16-frame dataset |
+| Evaluate rankings | `.venv_eval` | annotations only |
+| Run VARS+XVARS | `.venv` | none |
+| Run or fine-tune Qwen3-VL | `.venv` | complete 16-frame dataset |
+| Run VLM2Vec-V2 or LamRA | `.venv_vlm2vec` | complete 16-frame dataset |
+| Run InternVideo2 | `.venv_internvideo2` | complete 16-frame dataset |
 
 ## Setup
 
@@ -48,7 +48,7 @@ git submodule update --init --recursive
 
 **2. Virtual environments**
 
-To verify the released tables without running a model:
+For evaluation only:
 
 ```bash
 python3.11 -m venv .venv_eval
@@ -116,16 +116,15 @@ Obtain [SoccerNet-MVFoul](https://www.soccer-net.org/) and place it at
 `data/mvfouls/`. Each `{Train,Valid,Test}` split must contain its action folders
 and `annotations.json`. Train is the gallery; Valid and Test are the queries.
 
-The paper does not embed the raw clips directly. Before building an index or running retrieval,
-extract the same 16-frame temporal window used by VARS:
+Before building an index or running retrieval, extract the 16-frame temporal
+windows used by the models:
 
 ```bash
 source .venv/bin/activate       # or either model-specific environment
 python prepare_dataset.py       # -> data/mvfouls_window/
 ```
 
-To verify the released rankings without processing videos, copy only the
-annotations:
+To evaluate existing rankings without processing videos, copy only the annotations:
 
 ```bash
 source .venv_eval/bin/activate
@@ -141,12 +140,81 @@ find data/mvfouls_window -name 'clip_*.mp4' | wc -l
 
 All subsequent commands use `data/mvfouls_window/`.
 
+## Run retrieval
 
-## Evaluate your own retrieval method
+The following example retrieves Test queries with Qwen3-VL-Embedding-2B. After
+installing its environment and preparing the dataset:
 
-You do not need to run or load any of the released baselines to evaluate a new
-retrieval method. Write its rankings to one directory using the same split and
-gallery-view names as the released rankings:
+```bash
+source .venv/bin/activate
+MODEL=qwen3vl-2b
+
+python -m retrieval.build_full_index \
+  --model "$MODEL" \
+  --data_dir data/mvfouls_window \
+  --nframes 16 \
+  --clip_mode multi_clip \
+  --index_dir "retrieval/indexes/$MODEL"
+
+python -m retrieval.retrieve \
+  --model "$MODEL" \
+  --index_base "retrieval/indexes/$MODEL" \
+  --data_dir data/mvfouls_window \
+  --nframes 16 \
+  --clip_mode multi_clip \
+  --instruction "Retrieve videos similar to the query video." \
+  --splits Test \
+  --views full \
+  --top_k 20 \
+  --out_dir "retrieval/rankings/$MODEL"
+```
+
+The retrieved Train action IDs are written to
+`retrieval/rankings/qwen3vl-2b/test_full.json`.
+
+Other model keys are `qwen3vl-8b`, `vlm2vec-v2`, `lamra`,
+`internvideo2-1b`, and `internvideo2-6b`. Activate the corresponding environment
+from the setup table before changing `MODEL`.
+
+For category-relevance retrieval, derive the label-complete indexes and run all
+three gallery views:
+
+```bash
+python -m retrieval.derive_label_complete_indexes \
+  --index_dir "retrieval/indexes/$MODEL" \
+  --data_dir data/mvfouls_window
+
+python -m retrieval.retrieve \
+  --model "$MODEL" \
+  --index_base "retrieval/indexes/$MODEL" \
+  --data_dir data/mvfouls_window \
+  --nframes 16 \
+  --clip_mode multi_clip \
+  --instruction "Retrieve videos similar to the query video." \
+  --out_dir "retrieval/rankings/$MODEL"
+```
+
+These commands overwrite that model's included ranking files. Use `git diff` if
+you want to compare the new rankings with the repository versions.
+
+### VARS+XVARS retrieval
+
+The text-mediated pipeline uses the included VARS attributes, XVARS answers,
+and Train answer embeddings:
+
+```bash
+source .venv/bin/activate
+python -m retrieval.vars_xvars.retrieve --split Test
+python -m retrieval.vars_xvars.retrieve --split Valid
+```
+
+Results are written to `retrieval/vars_xvars/rankings/`.
+
+## Evaluate rankings
+
+### Your own method
+
+Place your rankings in one directory:
 
 ```text
 outputs/my_model/
@@ -158,16 +226,13 @@ outputs/my_model/
   valid_action_offence_severity.json
 ```
 
-Each file is a JSON object that maps a query action to an ordered list of Train
-gallery IDs. Candidate IDs may be bare or prefixed with `action_`:
+Each file maps a query action to an ordered list of Train action IDs:
 
 ```json
 {
   "action_0": ["89", "action_403", "815"]
 }
 ```
-
-Then evaluate only that method:
 
 ```bash
 python -m evaluation.precedent \
@@ -182,101 +247,28 @@ python -m evaluation.category \
 Precedent relevance uses the `full` files. Category relevance uses the
 `action_offence` and `action_offence_severity` files.
 
-## Reproduce the tables
+### Included rankings
 
-The released ranking files allow the three tables to be verified without
-loading any retrieval model. After preparing the dataset annotations, run:
+The repository includes rankings for all methods in the paper. To evaluate
+them without loading the models:
 
 ```bash
 source .venv_eval/bin/activate
-python -m evaluation.precedent            # Table 3, including 20,000-resample CIs
-python -m evaluation.category             # Table 4, including 20,000-resample CIs
+python prepare_dataset.py --annotations-only
+python -m evaluation.precedent            # Table 3
+python -m evaluation.category             # Table 4
 python -m evaluation.instruction_ablation # Table 5
 ```
 
-Evaluation is CPU-only. As quick checks, the fine-tuned model should report
-`HR@10 = 3.75` in Table 3 and `Action@1 = 40.3` in Table 4.
+As quick checks, the fine-tuned model should report `HR@10 = 3.75` in Table 3
+and `Action@1 = 40.3` in Table 4.
 
-### Regenerate visual-model rankings
+## Additional experiments
 
-Choose a model and activate its environment:
+### Instruction ablation
 
-```bash
-# Qwen3-VL-Embedding-2B or Qwen3-VL-Embedding-8B
-source .venv/bin/activate
-MODEL=qwen3vl-2b
-
-# VLM2Vec-V2 or LamRA
-# source .venv_vlm2vec/bin/activate
-# MODEL=vlm2vec-v2
-
-# InternVideo2-1B or InternVideo2-6B
-# source .venv_internvideo2/bin/activate
-# MODEL=internvideo2-1b
-```
-
-Then build the Train gallery indexes and retrieve the Valid and Test queries:
-
-```bash
-python -m retrieval.build_full_index \
-  --model "$MODEL" \
-  --data_dir data/mvfouls_window \
-  --nframes 16 \
-  --clip_mode multi_clip \
-  --index_dir "retrieval/indexes/$MODEL" \
-  --force_rebuild
-
-python -m retrieval.derive_label_complete_indexes \
-  --index_dir "retrieval/indexes/$MODEL" \
-  --data_dir data/mvfouls_window
-
-python -m retrieval.retrieve \
-  --model "$MODEL" \
-  --index_base "retrieval/indexes/$MODEL" \
-  --data_dir data/mvfouls_window \
-  --nframes 16 \
-  --clip_mode multi_clip \
-  --instruction "Retrieve videos similar to the query video." \
-  --out_dir "retrieval/rankings/$MODEL"
-
-python -m evaluation.precedent
-python -m evaluation.category
-```
-
-The retrieval command writes all six ranking files required by Tables 3 and 4.
-Repeat these commands for:
-
-```text
-internvideo2-1b
-qwen3vl-2b
-vlm2vec-v2
-internvideo2-6b
-lamra
-qwen3vl-8b
-```
-
-Regeneration overwrites the corresponding released rankings. Use `git diff` to
-compare them with the checked-in versions.
-
-### Regenerate the VARS+XVARS rankings
-
-The text-mediated baseline uses the released VARS attributes, XVARS answers,
-and Train answer embeddings:
-
-```bash
-source .venv/bin/activate
-python -m retrieval.vars_xvars.retrieve --split Test
-python -m retrieval.vars_xvars.retrieve --split Valid
-
-python -m evaluation.precedent
-python -m evaluation.category
-```
-
-### Regenerate the instruction ablation
-
-After building a model's full index, run the following three retrieval commands.
-Repeat them for `qwen3vl-2b`, `qwen3vl-8b`, `vlm2vec-v2`, and `lamra`
-using the corresponding environment:
+After building a model's full index, run the three retrieval instructions below.
+Repeat them for `qwen3vl-2b`, `qwen3vl-8b`, `vlm2vec-v2`, and `lamra`.
 
 ```bash
 MODEL=qwen3vl-2b
@@ -305,15 +297,14 @@ python -m retrieval.retrieve \
   --out_dir "$OUTPUT/detailed"
 ```
 
-After generating all three instructions for all four models, evaluate the
-regenerated Table 5 with:
+Evaluate the resulting rankings with:
 
 ```bash
 source .venv_eval/bin/activate
 python -m evaluation.instruction_ablation
 ```
 
-### Task-specific fine-tuned baseline
+## Fine-tune Qwen3-VL-Embedding-2B
 
 Fine-tune Qwen3-VL-Embedding-2B with the paper configuration, then build its
 indexes and rankings:
@@ -365,7 +356,7 @@ python -m evaluation.precedent
 python -m evaluation.category
 ```
 
-### Optional SLURM launchers
+## Optional SLURM launchers
 
 SLURM is not required. Optional launchers are available under `scripts/slurm/`:
 
