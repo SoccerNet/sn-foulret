@@ -54,20 +54,24 @@ python -m pip install -r requirements/qwen.txt -r requirements/demo.txt
 
 **2. Add and prepare the data**
 
-Download [SoccerNet-MVFoul](https://github.com/SoccerNet/sn-mvfoul) and place
-its Train split at:
-
-```text
-data/mvfouls/Train/
-  annotations.json
-  action_*/clip_*.mp4
-```
-
-Then extract the 16-frame windows used by the model:
+Download [SoccerNet-FoulRet](https://huggingface.co/datasets/OpenSportsLab/SoccerNet-FoulRet) and 
 
 ```bash
-python prepare_dataset.py Train
+unzip data.zip
+``` 
+into the root directory.
+
+Then extract the 16-frame windows used by the model. Prepare Train for the gallery and Test as well if you want to query the demo with a Test-set clip:
+
+```bash
+python prepare_dataset.py Train Test
 ```
+
+To query with a Test-set action in the demo, upload one of its prepared clips
+from `data/mvfouls_window/Test/action_<N>/clip_<N>.mp4`. This uses the same
+foul-centered 16-frame windowing as the gallery. The demo also accepts arbitrary
+MP4 uploads, but those are sampled by the model rather than preprocessed into
+the dataset's fixed foul-centered window.
 
 **3. Build the complete Train index**
 
