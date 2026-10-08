@@ -440,6 +440,7 @@ Adjust the scheduler directives for your cluster.
 
 If you use this benchmark, please cite the SoccerNet-FoulRet paper:
 
+```
 @misc{arthur2026soccernetfoulretretrievingsemanticallysimilar,
       title={SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Foul Videos}, 
       author={Jacobus Arthur and Ahmad Sait and Batool Hani and Merey Ramazanova and Jan Held and Marc Van Droogenbroeck and Bernard Ghanem and Anthony Cioppa and Silvio Giancola},
@@ -449,3 +450,4 @@ If you use this benchmark, please cite the SoccerNet-FoulRet paper:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2610.09742}, 
 }
+```
