@@ -254,12 +254,6 @@ python -m retrieval.vars_xvars.retrieve --split Valid
 
 Results are written to `retrieval/vars_xvars/rankings/`.
 
-## Demo options and troubleshooting
-
-The Quick Start builds the complete Qwen3-VL Train index. The launcher never
-builds an index automatically; if an index file is missing, it exits with a
-warning and prints the build command that must be completed first.
-
 ### Other models and settings
 
 Configure another model or port with environment variables:
@@ -271,25 +265,6 @@ MODEL=qwen3vl-2b-finetuned \
 LORA_PATH=finetuning_outputs/qwen3vl-2b-labelsup/best_model \
 bash Demo/run_flask_app.sh
 ```
-
-Run the launcher from the environment for the selected model. It uses the
-active environment's `python`; override it with `PYTHON_BIN` if needed. You can
-also override `DATA_DIR`, `INDEX_DIR`, `TOP_K`, `HOST`, or `PORT`. The default
-`HOST=127.0.0.1` keeps the development server local; do not expose it directly
-to the internet.
-
-All registered models support uploaded MP4 video-to-video queries.
-
-### Troubleshooting
-
-| Message or symptom | Resolution |
-|---|---|
-| `Python was not found` | Install Conda and activate the required environment from Optional workflows and model backends. |
-| `Flask is not installed` | Activate that environment and run `python -m pip install -r requirements/demo.txt`. |
-| Model download fills a small home quota | Set `HF_HOME` to a larger location before running the command, for example `export HF_HOME=/path/with/space/huggingface`. |
-| `Prepared Train data not found` | Check the dataset layout, then run `python prepare_dataset.py`. |
-| `The Train index required by the demo is missing` | Run the printed `retrieval.build_full_index` command, then restart the launcher. |
-| Model download is unauthorized | For a gated model, accept its access conditions and authenticate with `hf auth login`. |
 
 ## Evaluate rankings
 
@@ -446,7 +421,7 @@ python -m evaluation.instruction_ablation
 
 ## Optional SLURM launchers
 
-SLURM is not required. Optional launchers are available under `scripts/slurm/`:
+Optional launchers are available under `scripts/slurm/`:
 
 ```bash
 # Build both index stages, then launch dependent retrieval jobs
@@ -463,5 +438,14 @@ Adjust the scheduler directives for your cluster.
 
 ## Citation
 
-If you use this benchmark, please cite the SoccerNet-FoulRet paper (BibTeX to be added on
-publication).
+If you use this benchmark, please cite the SoccerNet-FoulRet paper:
+
+@misc{arthur2026soccernetfoulretretrievingsemanticallysimilar,
+      title={SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Foul Videos}, 
+      author={Jacobus Arthur and Ahmad Sait and Batool Hani and Merey Ramazanova and Jan Held and Marc Van Droogenbroeck and Bernard Ghanem and Anthony Cioppa and Silvio Giancola},
+      year={2026},
+      eprint={2610.09742},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.09742}, 
+}
